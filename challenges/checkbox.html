@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>Checkboxes</title>
+		<style>
+			fieldset {
+				border: none;
+			}
+			.checkbox {
+				position: relative;
+			}
+			.checkbox label:before,
+			.checkbox label:after {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				border-radius: 4px;
+			}
+			.checkbox label:before {
+				width: 50px;
+				height: 20px;
+				background-color: red;
+			}
+			.checkbox label:after {
+				width: 20px;
+				height: 20px;
+				background-color: green;
+			}
+			.checkbox input:checked + label:after {
+				left: 30px;
+			}
+			label {
+				padding-left: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>Are your details correct?</legend>
+
+				<div class="field checkbox">
+					<input id="confirm-details" name="live" type="checkbox" role="checkbox" aria-checked="true" checked="checked" title="Yes" />
+					<label for="confirm-details">My details are correct to my knowledge</label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Can we add you to our mailing list?</legend>
+
+				<div class="field checkbox">
+					<input id="confirm-email" name="live" type="checkbox" role="checkbox" aria-checked="false" title="Yes" />
+					<label for="confirm-email">I give you my permission to send me emails every so often</label>
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>
