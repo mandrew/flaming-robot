@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags always come first -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<nav class="sidebar navbar-inverse">
+				<div class="side-content side-header">
+					<a class="brand" href="#"><img class="global-logo" src="http://www.silverstripe.org/themes/ssv3/img/global-logo-company.svg" /></a>
+				</div>
+				<div class="side-content">
+					<ul class="nav nav-stacked">
+						<li class="nav-main-heading">
+							Sites
+							<a href="#" class="badge nav-add-stack">+</a>
+						</li>
+						<li class="">
+							<a class="nav-submenu level1 open" role="button" href="#" aria-controls="collapseExample-1">
+								<span class="plat-icon icon-stack-active"></span>
+								<span class="project-name">New Website</span>
+								<span class="icon-arrow"></span>
+							</a>
+
+							<ul class="collapse in" id="collapseExample-1">
+					
+								<li>
+									<a href="#">Welcome</a>
+								</li>
+								<li>
+									<a href="#">Requirements</a>
+								</li>
+								<li>
+									<a href="#">Database</a>
+								</li>
+								<li>
+									<a href="#">Administration</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="installer-holder">
+				<header class="clearfix">
+					<h1 class="sr-only">SilverStripe</h1>
+				</header>
+				<form role="form" action="" method="post" class="installer">
+					<fieldset class="component">
+						<header>
+							<p class="pull-xs-right">SilverStripe Installer / Step 1</p>
+							<h2>Welcome</h2>
+						</header>
+
+						<div class="component-form">
+							<h2>CMS / Framework Installation <small>Version 3.1.6</small></h2>
+							<p>Thanks for choosing to use SilverStripe! Please follow the instructions below and you should be up in running in no time.<br>If you get stuck, head over to the <a href="http://silverstripe.org/installing-silverstripe" target="_blank">installation forum</a>, or check out our list of <a href="http://doc.silverstripe.org/doku.php?id=suggested-web-hosts" target="_blank">suggested web hosts</a> known to work with SilverStripe.
+							</p>
+							<div class="row">
+								<label class="col-sm-4 form-control-label" for="locale">Choose your language</label>
+								<div class="col-sm-5">
+									<select class="form-control c-select" name="locale" id="locale">
+										<option value="af_ZA">Afrikaans (South Africa)</option>
+										<option value="ar_EG">Arabic (Egypt)</option>
+										<option value="hy_AM">Armenian (Armenia)</option>
+										<option value="ast_ES">Asturian (Spain)</option>
+										<option value="az_AZ">Azerbaijani (Azerbaijan)</option>
+										<option value="bs_BA">Bosnian (Bosnia and Herzegovina)</option>
+										<option value="bg_BG">Bulgarian (Bulgaria)</option>
+										<option value="ca_ES">Catalan (Spain)</option>
+										<option value="zh_CN">Chinese (China)</option>
+										<option value="zh_TW">Chinese (Taiwan)</option>
+										<option value="hr_HR">Croatian (Croatia)</option>
+										<option value="cs_CZ">Czech (Czech Republic)</option>
+										<option value="da_DK">Danish (Denmark)</option>
+										<option value="nl_NL">Dutch (Netherlands)</option>
+										<option value="en_GB">English (United Kingdom)</option>
+										<option value="en_US" selected>English (United States)</option>
+										<option value="eo_XX">Esperanto</option>
+										<option value="et_EE">Estonian (Estonia)</option>
+										<option value="fo_FO">Faroese (Faroe Islands)</option>
+										<option value="fi_FI">Finnish (Finland)</option>
+										<option value="fr_FR">French (France)</option>
+										<option value="de_DE">German (Germany)</option>
+										<option value="el_GR">Greek (Greece)</option>
+										<option value="he_IL">Hebrew (Israel)</option>
+										<option value="hu_HU">Hungarian (Hungary)</option>
+										<option value="is_IS">Icelandic (Iceland)</option>
+										<option value="id_ID">Indonesian (Indonesia)</option>
+										<option value="it_IT">Italian (Italy)</option>
+										<option value="ja_JP">Japanese (Japan)</option>
+										<option value="km_KH">Khmer (Cambodia)</option>
+										<option value="lc_XX">LOLCAT</option>
+										<option value="lv_LV">Latvian (Latvia)</option>
+										<option value="lt_LT">Lithuanian (Lithuania)</option>
+										<option value="ms_MY">Malay (Malaysia)</option>
+										<option value="mi_NZ">Maori (New Zealand)</option>
+										<option value="ne_NP">Nepali (Nepal)</option>
+										<option value="nb_NO">Norwegian</option>
+										<option value="fa_IR">Persian (Iran)</option>
+										<option value="pl_PL">Polish (Poland)</option>
+										<option value="pt_BR">Portuguese (Brazil)</option>
+										<option value="pa_IN">Punjabi (India)</option>
+										<option value="ro_RO">Romanian (Romania)</option>
+										<option value="ru_RU">Russian (Russia)</option>
+										<option value="sr_RS">Serbian (Serbia)</option>
+										<option value="si_LK">Sinhalese (Sri Lanka)</option>
+										<option value="sk_SK">Slovak (Slovakia)</option>
+										<option value="sl_SI">Slovenian (Slovenia)</option>
+										<option value="es_AR">Spanish (Argentina)</option>
+										<option value="es_MX">Spanish (Mexico)</option>
+										<option value="es_ES">Spanish (Spain)</option>
+										<option value="sv_SE">Swedish (Sweden)</option>
+										<option value="th_TH">Thai (Thailand)</option>
+										<option value="tr_TR">Turkish (Turkey)</option>
+										<option value="uk_UA">Ukrainian (Ukraine)</option>
+										<option value="uz_UZ">Uzbek (Uzbekistan)</option>
+										<option value="vi_VN">Vietnamese (Vietnam)</option>
+									</select>
+									<small class="text-muted">This will be the default language of the CMS</small>
+								</div>
+							</div>
+						</div>
+						<nav class="clearfix">
+							<ul class="pager">
+								<li class="pager-next"><a class="step-next" href="#">Next</a></li>
+							</ul>
+						</nav>
+					</fieldset>
+
+					<fieldset class="component">
+						<header>
+							<p class="pull-xs-right">SilverStripe Installer / Step 2</p>
+							<h2>Requirements</h2>
+						</header>
+
+						<div class="component-form">
+							<div id="install-accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading bg-danger" role="tab" id="install-heading-3">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#install-accordion" href="#install-collapse-3" aria-expanded="false" aria-controls="install-collapse-3">
+												## failed <small class="text-muted">more info</small>
+											</a>
+										</h4>
+									</div>
+									<div id="install-collapse-3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="install-heading-3">
+										<ul class="list-group">
+											<li class="list-group-item list-group-item-danger">1 failure</li>
+										</ul>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading bg-warning" role="tab" id="install-heading-2">
+										<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#install-accordion" href="#install-collapse-2" aria-expanded="false" aria-controls="collapseTwo">
+												## warnings <small class="text-muted">more info</small>
+											</a>
+										</h4>
+									</div>
+									<div id="install-collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="install-heading-2">
+										<ul class="list-group">
+											<li class="list-group-item list-group-item-warning">1 warning</li>
+										</ul>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading bg-success" role="tab" id="install-heading-1">
+										<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#install-accordion" href="#install-collapse-1" aria-expanded="true" aria-controls="install-collapse-1">
+												## passed <small class="text-muted">more info</small>
+											</a>
+										</h4>
+									</div>
+									<div id="install-collapse-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="install-heading-1">
+										<ul class="list-group">
+											<li class="list-group-item list-group-item-success">40 requirements pass</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<p class="text-muted">Read more about our <a href="#">server requirements</a>.</p>
+						</div>
+
+						<nav class="clearfix">
+							<ul class="pager">
+								<li class="pager-prev"><a class="step-prev" href="#">Previous</a></li>
+								<li class="pager-next"><a class="step-next" href="#">Next</a></li>
+							</ul>
+						</nav>
+					</fieldset>
+
+					<fieldset class="component">
+						<header>
+							<p class="pull-xs-right">SilverStripe Installer / Step 3</p>
+							<h2>Database Configuration</h2>
+						</header>
+						<div class="row component-form">
+							<div class="col-sm-6">
+
+								<p class="text-muted">Either fill out your database details:</p>
+
+								<div class="form-group row">
+									<label class="col-sm-2 form-control-label" for="db_server">Database:</label>
+									<span class="col-sm-10">
+										<select class="form-control c-select" name="db_server" id="db_server">
+											<option selected>Choose your database type</option>
+											<option value="mysql">MySQL 5.0+</option>
+											<option value="sqlserver">SQL Server 2008</option>
+											<option value="postresql">PostgreSQL 8.3+</option>
+											<option value="sqlite">SQLite 3.3+</option>
+										</select>
+									</span>
+								</div>
+								<div class="form-group row">
+									<label class="col-sm-2 form-control-label" for="db_server">Server:</label>
+									<span class="col-sm-10">
+										<input id="db_server" class="form-control text configured-by-env" type="text" name="db[MySQLDatabase][server]" value="localhost">
+									</span>
+								</div>
+								<div class="form-group row">
+									<label class="col-sm-2 form-control-label" for="db_username">Username:</label>
+									<span class="col-sm-10">
+										<input id="db_username" class="form-control text configured-by-env" type="text" name="db[MySQLDatabase][username]" value="root">
+									</span>
+								</div>
+								<div class="form-group row">
+									<label class="col-sm-2 form-control-label" for="db_password">Password:</label>
+									<span class="col-sm-10">
+										<input id="db_password" class="form-control text configured-by-env" type="password" name="db[MySQLDatabase][password]" value="root">
+									</span>
+								</div>
+								<div class="form-group row">
+									<label class="col-sm-2 form-control-label" for="db_database">Name:</label>
+									<span class="col-sm-10">
+										<input id="db_database" class="form-control text" type="text" name="db[MySQLDatabase][database]" value="SS_mysite">
+									</span>
+								</div>
+								<p class="text-muted">Read more about our <a href="#">database requirements</a>.</p>
+							</div>
+
+							<div class="col-sm-6">
+								<p class="text-muted">OR</p>
+
+								<div class="form-group">
+									<label class="c-input c-checkbox">
+										<input type="checkbox">
+										<span class="c-indicator"></span>
+										I would like to use my _ss_environment.php file for configuration
+									</label>
+								</div>
+								<p class="text-muted">Read more about <a href="#">_ss_environment.php file requirements</a>.</p>
+							</div>
+						</div>
+						<nav class="clearfix">
+							<ul class="pager">
+								<li class="pager-prev"><a class="step-prev" href="#">Previous</a></li>
+								<li class="pager-next"><a class="step-next" href="#">Next</a></li>
+							</ul>
+						</nav>
+					</fieldset>
+
+					<fieldset class="component">
+						<header>
+							<p class="pull-xs-right">SilverStripe Installer / Step 4</p>
+							<h2>Website Details</h2>
+						</header>
+						<div class="row component-form">
+							<div class="col-sm-6">
+
+								<p class="text-muted">Fill out your admin details:</p>
+
+								<div class="form-group row">
+									<label class="col-sm-2 form-control-label" for="member_email">Email:</label>
+									<span class="col-sm-10">
+										<input id="member_email" class="form-control text configured-by-env" type="text" name="db[MySQLDatabase][email]" value="root">
+									</span>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-sm-2 form-control-label" for="member_password">Password:</label>
+									<span class="col-sm-10">
+										<input id="member_password" class="form-control text configured-by-env" type="text" name="db[MySQLDatabase][database]" value="root">
+									</span>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-sm-2 form-control-label" for="member_password">Password:</label>
+									<span class="col-sm-10">
+										<input id="member_password" class="form-control text configured-by-env" type="text" name="db[MySQLDatabase][database]" value="root">
+									</span>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-sm-2 form-control-label" for="locale">Choose a theme:</label>
+									<span class="col-sm-10">
+										<select name="locale" id="locale" class="form-control c-select">
+											<option selected="selected" value="environment">Default theme</option>
+											<option value="mysql">Skeleton</option>
+											<option value="sqlserver">None</option>
+										</select>
+									</span>
+								</div>
+
+								<div class="form-group row">
+									<div class="col-sm-10 col-sm-offset-2">
+										<label class="c-input c-checkbox">
+											<input type="checkbox" id="stats" name="stats" checked="checked">
+											<span class="c-indicator"></span>
+											Send information about my webserver to silverstripe.org<br>
+											<small class="text-muted">(anonymous version information, used for statistical purposes)</small>
+										</label>
+									</div>
+								</div>
+
+								<p class="text-muted">Read more about <a href="#">admin requirements</a>.</p>
+							</div>
+						</div>
+						<nav class="clearfix">
+							<ul class="pager">
+								<li class="pager-prev"><a class="step-prev" href="#">Previous</a></li>
+								<li class="pager-next"><a class="step-next" href="#">Submit</a></li>
+							</ul>
+						</nav>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<!-- jQuery first, then Bootstrap JS. -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
