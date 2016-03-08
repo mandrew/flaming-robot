@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Slider for Bootstrap Examples Page</title>
+
+    <!-- core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="http://seiyria.com/bootstrap-slider/css/bootstrap-slider.css" rel="stylesheet">
+    <link href="slider.css" rel="stylesheet">
+  </head>
+  <body>
+  	<div class="container">
+	  	<div class="seiyria-slider well">
+	  		<input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="2000000" data-slider-step="1" data-slider-value="14"/>
+	  	</div>
+
+	  	<div class="row">
+			<div class="col-md-4">Item</div>
+			<div class="col-md-4">Item</div>
+			<div class="col-md-4">Item</div>
+		</div>
+	</div>
+  	
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.1/bootstrap-slider.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function() {
+			$('#ex1').slider({
+				formatter: function(value) {
+					return 'Current value: ' + value;
+				}
+			});
+		});
+	</script>
+  </body>
+</html>

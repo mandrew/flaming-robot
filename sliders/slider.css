@@ -1,0 +1,18 @@
+.container {
+	width: 600px;
+	padding-top: 100px;
+}
+
+// Seiyria slider
+.seiyria-slider .slider {
+	
+}
+
+.seiyria-slider.slider-selection {
+	background: #BABABA;
+}
+
+// Eyecon slider
+.eyecon-slider.slider-selection {
+	background: #BABABA;
+}
