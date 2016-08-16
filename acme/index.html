@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ACME</title>
+        <meta name="description" content="ACME Ltd.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header role="banner">
+            <div class="component-content">
+                <img class="logo" src="img/logo-acme.png" title="Acme Logo" />
+                <h1>ACME Ltd.</h1>
+                <p>Believe you can and you are halfway there</p>
+                <div class="admin-menu">
+                    <a class="js-admin" href="#">Admin access<span class="text-off"> off</span> <span class="text-on"> on</span></a>
+                </div>
+            </div>
+        </header>
+
+        <main class="content" role="main">
+            <div class="component-content">
+                <h2>Welcome!</h2>
+                <p>Please select from the following list to start learning a particular topic.</p>
+            </div>
+
+            <div class="filter-bar component-content">
+                <p class="visuallyhidden">Display content as:</p>
+                <ul class="filter-bar-display">
+                    <li><a href="#" class="btn purple js-list-courses">List</a></li><li><a href="#" class="btn purple current js-block-courses">Block</a></li>
+                </ul>
+                <p>Order by</p>
+                <select class="filter-bar-select">
+                    <option>Title</option>
+                    <option>Topic</option>
+                    <option>Progress</option>
+                </select>
+                <ul class="filter-bar-order">
+                    <li><a href="#" class="btn current">Title</a></li><li><a href="#" class="btn">Topic</a></li><li><a href="#" class="btn">Progress</a></li>
+                </ul>
+            </div>
+
+            <div class="component-content">
+                <ol class="courses-holder js-list-items block">
+                    <li class="no-items">
+                        <h3>There are no items at present</h3>
+                        <p>Contact the <a href="#">Admin</a> if you believe there has been an error</p>
+                    </li>
+                </ol>
+            </div>
+        </main>
+
+        <footer role="contentinfo">
+            <div class="component-content">
+                <p>Created by <a href="http://mike.andrewartha.co.nz">Mike Andrewartha</a></p>
+            </div>
+        </footer>
+
+        <script src="js/jquery-3.1.0.min.js"></script>
+        <script src="js/importdata.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
