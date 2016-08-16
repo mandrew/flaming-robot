@@ -88,6 +88,9 @@ header .logo {
     display: none;
 }
 
+.content .component-content {
+    position: relative;
+}
 .component-content {
     margin: 0 auto;
     max-width: 900px;
@@ -126,6 +129,9 @@ footer p {
 }
 .btn.red {
     color: red;
+}
+.btn.green {
+    color: green;
 }
 .btn.purple {
     border: 1px solid #502E8C;
@@ -171,6 +177,10 @@ footer p {
 .filter-bar select {
     display: none;
 }
+.filter-bar-order .btn {
+    /* temporary visual cue until functionality added */
+    cursor: not-allowed;
+}
 @media only screen and (max-width: 600px) {
     .filter-bar select {
         display: block;
@@ -179,6 +189,8 @@ footer p {
     .filter-bar .filter-bar-order {
         display: none;
     }
+}
+@media only screen and (max-width: 300px) {
     .filter-bar .filter-bar-display {
         float: none;
         margin-bottom: 10px;
@@ -198,6 +210,11 @@ footer p {
     position: relative;
     display: block;
     margin-bottom: 30px;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+}
+.courses-holder.list {
+    margin-bottom: 20px;
 }
 .courses-holder.list .course-item:before,
 .courses-holder.list .course-item:after {
@@ -212,8 +229,6 @@ footer p {
     position: relative;
     z-index: 1;
     width: 45%;
-    margin-right: 2.5%;
-    margin-left: 2.5%;
     max-height: 320px;
     overflow: hidden;
     background-color: #555;
@@ -251,12 +266,17 @@ footer p {
 }
 .course-name {
     margin: 0;
-    padding: 0.5em 0;
 }
 .courses-holder.block .course-name {
     font-size: 2em;
     color: #fff;
     padding: 1em 0 1.3em;
+}
+.courses-holder.block .hover .course-name {
+    padding-top: 1.5em;
+}
+.courses-holder.list .course-name {
+    padding: 0.3em 0 0.6em;
 }
 @media only screen and (max-width: 890px) {
     .courses-holder.block .course-name {
@@ -301,11 +321,19 @@ footer p {
     width: 200px;
     min-height: 133px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 .course-image img {
     display: block;
     max-width:100%;
     max-height:100%;
+}
+@media only screen and (max-width: 400px) {
+    .courses-holder.list .course-image {
+        float: none;
+        width: 100%;
+        min-height: inherit;
+    }
 }
 .course-link {
     display: block;
@@ -315,6 +343,10 @@ footer p {
     bottom: 0;
     left: 0;
     z-index: 5;
+}
+a.course-link {
+    /* temporary visual cue until functionality added */
+    cursor: not-allowed;
 }
 
 /* admin area */
@@ -330,11 +362,19 @@ footer p {
 .course-admin.hide {
     display: none;
 }
+.course-admin.add-course {
+    top: 15px;
+    right: 25px;
+}
 .course-admin p {
     display: block;
     float: left;
     margin: 0;
     padding-right: 15px;
+}
+.course-admin .btn {
+    /* temporary visual cue until functionality added */
+    cursor: not-allowed;
 }
 
 /* meter styles */
@@ -343,6 +383,20 @@ footer p {
     width: 350px;
     padding: 0;
     margin: 0;
+}
+@media only screen and (max-width: 400px) {
+    .course-progress-meter {
+        width: auto;
+    }
+    .course-progress-meter .meter {
+        display: none;
+    }
+    .course-progress-message.visuallyhidden {
+        display: inline-block;
+        position: relative;
+        overflow: inherit;
+        width: auto;
+    }
 }
 .courses-holder.block .course-progress-meter {
     position: absolute;

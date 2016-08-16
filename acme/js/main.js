@@ -75,7 +75,7 @@
             if(courseEdit || courseDelete) {
                 var adminBlock = $('<div>', {
                     'class': 'course-admin hide',
-                    'html': "<p>Admin options</p>"
+                    'html': "<p>Course options</p>"
                 })
                 listItem.append(adminBlock)
 
