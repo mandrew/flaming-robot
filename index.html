@@ -16,9 +16,28 @@
             h1,h2,a,p {
                 font-family: 'Muli', Arial, sans-serif;
             }
+            nav a:hover {
+                color: #ff1b00;
+            }
+            nav a:focus,
+            nav a:hover {
+                text-decoration: none;
+            }
+            nav span.external span {
+                margin-right: 0;
+            }
             .site-title {
                 -webkit-box-sizing: content-box;
                 box-sizing: content-box;
+            }
+            .greeting a,
+            .site-description a,
+            .site-title a {
+                font-family: Arial, sans-serif;
+            }
+            .site-title a {
+                line-height: 1.2em;
+                word-spacing: 127px;
             }
             a.card:hover,
             a.card:visited {
@@ -40,17 +59,17 @@
         <header id="banner" role="banner">
 			<section class="banner-holder">
 				<hgroup class="intro-button" itemref="content-info" itemscope="" itemtype="http://microformats.org/profile/hcard">
-					<div class="greeting"><a itemprop="url" href="home" title="Mike Andrewartha">Kia Ora</a></div>
-					<p class="site-description"><a itemprop="url" href="home" title="Mike Andrewartha">my name is</a></p>
-					<div class="site-title" itemprop="fn org"><a itemprop="url" href="home" title="Mike Andrewartha">Mike Andrewartha</a></div>
+					<div class="greeting"><a itemprop="url" href="http://mike.andrewartha.co.nz/home" title="Mike Andrewartha">Kia Ora</a></div>
+					<p class="site-description"><a itemprop="url" href="http://mike.andrewartha.co.nz/home" title="Mike Andrewartha">my name is</a></p>
+					<div class="site-title" itemprop="fn org"><a itemprop="url" href="http://mike.andrewartha.co.nz/home" title="Mike Andrewartha">Mike Andrewartha</a></div>
 				</hgroup>
 				<h1>Mike Andrewartha<br>
-				<nav><span>overview</span> <a class="external" href="http://mandrewnz.tumblr.com#latest" title="blog">blog <span>&nbsp;↑</span></a> <a href="/#contact" title="Contact">contact</a></nav></h1>
+				<nav><a href="http://mike.andrewartha.co.nz">overview</a> <a class="external" href="http://mandrewnz.tumblr.com#latest" title="blog">blog <span>&nbsp;↑</span></a> <span class="external">sandbox <span>&nbsp;↑</span></span> <a href="http://mike.andrewartha.co.nz/#contact" title="Contact">contact</a></nav></h1>
 			</section>
 		</header>
         <div class="container">
             <div class="component top">
-                <h2>Experimental stuff!</h2>
+                <h2>&lt;code class="experimental"&gt;</h2>
             </div>
         </div>
         <div class="container">
@@ -73,6 +92,11 @@
                 <a class="card" href="sliders/eyecon-slider.html">
                     <div class="card-block"><h4 class="card-title">Eyecon Slider</h4></div>
                 </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="component">
+                <h2>&lt;&#47;code&gt;</h2>
             </div>
         </div>
         <link href="http://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css">
