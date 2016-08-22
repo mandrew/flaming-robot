@@ -10,18 +10,71 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://mike.andrewartha.co.nz/themes/hardyakka/css/style.css" media="screen" title="mike css" charset="utf-8">
+        <style type="text/css">
+            h1,h2,a,p {
+                font-family: 'Muli', Arial, sans-serif;
+            }
+            .site-title {
+                -webkit-box-sizing: content-box;
+                box-sizing: content-box;
+            }
+            a.card:hover,
+            a.card:visited {
+                border-bottom: 1px solid rgba(0,0,0,.125);
+            }
+            .component {
+                padding: 2rem 1.5rem;
+                text-align: center;
+            }
+            .component.top {
+                margin-top: 7.5rem;
+            }
+        </style>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <h2>Experimental stuff!</h2>
-        <a href="pamper-project/index.html">Pamper Project</a>
-
-        <a href="sliders/seiyria-bootstrap-slider.html">Seiyria Bootstrap Slider</a>
-        <a href="sliders/eyecon-slider.html">Eyecon Bootstrap Slider</a>
+        <header id="banner" role="banner">
+			<section class="banner-holder">
+				<hgroup class="intro-button" itemref="content-info" itemscope="" itemtype="http://microformats.org/profile/hcard">
+					<div class="greeting"><a itemprop="url" href="home" title="Mike Andrewartha">Kia Ora</a></div>
+					<p class="site-description"><a itemprop="url" href="home" title="Mike Andrewartha">my name is</a></p>
+					<div class="site-title" itemprop="fn org"><a itemprop="url" href="home" title="Mike Andrewartha">Mike Andrewartha</a></div>
+				</hgroup>
+				<h1>Mike Andrewartha<br>
+				<nav><span>overview</span> <a class="external" href="http://mandrewnz.tumblr.com#latest" title="blog">blog <span>&nbsp;↑</span></a> <a href="/#contact" title="Contact">contact</a></nav></h1>
+			</section>
+		</header>
+        <div class="container">
+            <div class="component top">
+                <h2>Experimental stuff!</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card-columns">
+                <a class="card" href="pamper-project/index.html">
+                    <div class="card-block"><h4 class="card-title">Beauty Salon</h4></div>
+                </a>
+                <a class="card" href="installer/index.html">
+                    <div class="card-block"><h4 class="card-title">SilverStripe Installer</h4></div>
+                </a>
+                <a class="card" href="challenges/checkbox.html">
+                    <div class="card-block"><h4 class="card-title">Challenge: Checkbox</h4></div>
+                </a>
+                <a class="card" href="challenges/checkbox.html">
+                    <div class="card-block"><h4 class="card-title">Challenge: Acme Ltd.</h4></div>
+                </a>
+                <a class="card" href="sliders/seiyria-bootstrap-slider.html">
+                    <div class="card-block"><h4 class="card-title">Seiyria Slider</h4></div>
+                </a>
+                <a class="card" href="sliders/eyecon-slider.html">
+                    <div class="card-block"><h4 class="card-title">Eyecon Slider</h4></div>
+                </a>
+            </div>
+        </div>
+        <link href="http://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css">
     </body>
 </html>
