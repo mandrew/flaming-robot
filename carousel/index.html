@@ -1,0 +1,156 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Carousel</title>
+        <meta name="description" content="Carousel">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../default/css/normalize.css" media="screen">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2.0.3/dist/flickity.css" media="screen">
+        <style type="text/css">
+            * { box-sizing: border-box; }
+            body {
+                background-color: #000;
+                font-family: sans-serif;
+            }
+
+            .content {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+                /* flickity relies on a scroll bar for some weird reason, so I'm making content area smaller */
+            }
+
+            .flickity-enabled {
+            position: relative;
+            }
+
+            .flickity-enabled:focus { outline: none; }
+
+            .flickity-viewport {
+                overflow: hidden;
+                position: relative;
+                height: 100%;
+            }
+
+            .flickity-slider {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            .carousel {
+                background: #FAFAFA;
+            }
+            .flickity-slider {
+                transform: none;
+            }
+            .carousel-cell {
+                display: inline-block;
+                width: 100%;
+                height: 500px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top left;
+            }
+            .carousel-cell--center {
+                background-position: center left;
+            }
+            .carousel-cell--bottom {
+                background-position: bottom left;
+            }
+            .carousel-cell-content {
+                display: inline-block;
+                margin: 2rem 0 0 2rem;
+                color: #fff;
+                padding: 1rem 3rem;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+
+            @media screen and ( min-width: 768px ) {
+                .carousel img {
+                    height: 400px;
+                }
+            }
+
+            /* buttons */
+            .button-row {
+                background-color: #000;
+            }
+            .button {
+                background: none;
+                border: none;
+                color: #fff;
+                padding: 15px 25px;
+            }
+            .button:hover,
+            .button.is-selected {
+                background-color: #fff;
+                color: #000;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header role="banner"><!-- --></header>
+
+        <main class="content" role="main">
+            <div class="carousel" data-flickity>
+                <div class="carousel-cell carousel-cell--center" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg');">
+                    <div class="carousel-cell-content">
+                        <h3>Orange tree</h3>
+                        <p>A tree with lots of oranges</p>
+                    </div>
+                </div>
+                <div class="carousel-cell carousel-cell--bottom" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg');">
+                    <div class="carousel-cell-content">
+                        <h3>Submerged</h3>
+                        <p>Someone swimming... hope they don't drown!</p>
+                    </div>
+                </div>
+                <div class="carousel-cell carousel-cell--center" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg');">
+                    <div class="carousel-cell-content">
+                        <h3>Look-out</h3>
+                        <p>Watching out for trouble!</p>
+                    </div>
+                </div>
+                <div class="carousel-cell carousel-cell--bottom" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg');">
+                    <div class="carousel-cell-content">
+                        <h3>One world trade</h3>
+                        <p>Building</p>
+                    </div>
+                </div>
+                <div class="carousel-cell carousel-cell--bottom" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg');">
+                    <div class="carousel-cell-content">
+                        <h3>Drizzle</h3>
+                        <p>Stay inside and read a book</p>
+                    </div>
+                </div>
+                <div class="carousel-cell carousel-cell--bottom" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg');">
+                    <div class="carousel-cell-content">
+                        <h3>Cat nose</h3>
+                        <p>What a nosey kitty!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-row">
+                <div class="button-group button-group--cells">
+                    <button class="button is-selected">Orange Tree</button>
+                    <button class="button">Submerged</button>
+                    <button class="button">Look-out</button>
+                    <button class="button">One World Trade</button>
+                    <button class="button">Drizzle</button>
+                    <button class="button">Cat nose</button>
+                </div>
+            </div>
+        </main>
+
+        <footer role="contentinfo"><!-- --></footer>
+
+        <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/flickity@2.0.3/dist/flickity.pkgd.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
