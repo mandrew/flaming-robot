@@ -21,7 +21,9 @@
                 color: #ff1b00;
             }
             nav a:focus,
-            nav a:hover {
+            nav a:hover,
+            .card,
+            .card a {
                 text-decoration: none;
             }
             nav span.external span {
@@ -40,9 +42,25 @@
                 line-height: 1.2em;
                 word-spacing: 127px;
             }
+            a.card h4 {
+                display: inline-block;
+                color: #ff1b00;
+                text-decoration: none;
+                border-bottom: 1px solid #eee;
+            }
+            a.card:hover h4 {
+                border-bottom: 1px solid #ccc;
+            }
             a.card:hover,
             a.card:visited {
                 border-bottom: 1px solid rgba(0,0,0,.125);
+            }
+            ul {
+                margin: 0;
+                list-style: none;
+            }
+            ul li {
+                display: inline-block;
             }
             .component {
                 padding: 2rem 1.5rem;
@@ -75,9 +93,9 @@
         </div>
         <div class="container">
             <div class="card-columns">
-                <a class="card" href="pamper-project/index.html">
+                <!-- <a class="card" href="pamper-project/index.html">
                     <div class="card-block"><h4 class="card-title">Beauty Salon</h4></div>
-                </a>
+                </a> -->
                 <a class="card" href="carousel/index.html">
                     <div class="card-block"><h4 class="card-title">Carousel</h4></div>
                 </a>
@@ -88,14 +106,17 @@
                     <div class="card-block"><h4 class="card-title">Challenge: Checkbox</h4></div>
                 </a>
                 <a class="card" href="acme/index.html">
-                    <div class="card-block"><h4 class="card-title">Challenge: Acme Ltd.</h4></div>
+                    <div class="card-block"><h4 class="card-title">Acme Ltd.</h4></div>
                 </a>
-                <a class="card" href="sliders/seiyria-bootstrap-slider.html">
-                    <div class="card-block"><h4 class="card-title">Seiyria Slider</h4></div>
-                </a>
-                <a class="card" href="sliders/eyecon-slider.html">
-                    <div class="card-block"><h4 class="card-title">Eyecon Slider</h4></div>
-                </a>
+                <span class="card">
+                    <div class="card-block">
+                        <h4 class="card-title">Research: Sliders</h4>
+                        <ul>
+                            <li><a href="sliders/seiyria-bootstrap-slider.html">Seiyria</a></li>
+                            <li><a href="sliders/eyecon-slider.html">Eyecon</a></li>
+                        </ul>
+                    </div>
+                </span>
             </div>
         </div>
         <div class="container">
