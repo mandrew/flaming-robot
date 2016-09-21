@@ -1,0 +1,314 @@
+
+/***** Global styles *****/
+body {
+	/* background: #d6c28f url(../images/background_tile.jpg) top left repeat-x; */
+	/*background: #FFFFFF url(../images/new-bg.jpg) top left repeat-x;*/
+	background: #fff; /*0e4274*/
+	/* color: #51504e; */
+	/*font-size: 87.5%;  Base font size: 14px */
+	/*font-family: Arial, sans-serif; */
+	/*line-height: 1.429; - unsure if this makes a difference */
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+.fluid-container {
+	padding: 0 1.5rem;
+}
+.main-content {
+	padding-top: 1rem;
+}
+body.home-page {
+	overflow-y: scroll;
+}
+.news-list li { margin-bottom: 10px; }
+.news-list .text-nowrap { color: #000; }
+/*img.right figure.right {float: right; margin: 0 0 2em 2em;}
+img.left, figure.left {float: left; margin: 0 2em 2em 0;}*/
+
+/* colors: 135975 0e4274 */
+.wrap-lightblue, .wrap-lightblue-content { background:#4d8dcb; }
+.wrap-dkblue, .wrap-dkblue-content { background: #0e4274; /*1a4f85*/ }
+.wrap-white, .wrap-white-content { background: #fff;}
+.wrap-grey, .wrap-grey-content { background: #f8f8f8;}
+
+.wrap-white-content,.wrap-grey-content, .wrap-lightblue-content, .wrap-dkblue-content { padding: 1.5rem 0 2.5rem; }
+
+.glyphicon.glyphicon-chevron-right { top: 0; font-size: 0.7rem; }
+.menu-list .glyphicon.glyphicon-chevron-right { top: -1px; }
+
+.center-block {
+	display: table;
+    margin: 0 auto;
+}
+
+.button, button, .btn, .form-control, .card, .card-img { border-radius: 0; }
+.card { border: none; }
+.card-inverse .card-text { color: rgba(255,255,255,1); }
+.card-img-overlay { background-color: rgba(0,0,0,0.5); bottom: auto; }
+
+/***** Header (Page.ss) *****/
+header { } /* or AAD0D3 url(../images/heading-bg.jpg) top left repeat-x; */
+header .logo {display: block; margin: 10px 0; text-align: center;}
+header h1 {color:#fff; margin-top: 30px; letter-spacing:-2px; line-height:25px; margin-bottom:0px;}
+header h1 a {color:#fff; text-decoration:none;}
+header img { display: block; height: 80px;}
+header p {color:#fff; padding: 0; margin: 0;}
+
+/***** Search Box (Page.ss) *****/
+header form {}
+.search-form fieldset {display: block; padding: 45px 0 0 0; margin: 0;}
+#SearchForm_SearchForm #Search, #SearchForm_SearchForm input.text {float: left; margin: 0;}
+#SearchForm_SearchForm input.text {float: left; width: 152px; height: auto; background: none; padding: 2px 7px; background-color: #fff; border-color: transparent; border-radius: 7px 0 0 7px;}
+#SearchForm_SearchForm input.action {margin: 0; border: 0; overflow: hidden; cursor: pointer; padding: 4px 8px; border-color: transparent; border-radius: 0 7px 7px 0;}
+#SearchForm_SearchForm .middleColumn {margin-left: 0;}
+
+/***** Menu 1 (Navigation.ss) *****/
+nav.navbar { padding: 0;}
+nav ul {margin: 0; padding: 0;}
+nav ul li {position: relative; display:block; float:left; margin: 0; padding: 0;}
+nav ul li a {display:block; float:left; line-height: 1.2em; color:#fff; font-weight: 300; padding:10px 13px; text-transform: uppercase; text-decoration:none;}
+.navbar-nav a.nav-link {padding:1rem 1.3rem;}
+nav ul li a:hover, nav ul li a:focus { color: #fff; cursor: pointer;}
+nav ul li a span {display:block; border-right: 2px solid #006c8e; padding:0 17px;}
+nav ul li.last a span {border-right: none;}
+nav li.current a, nav li.section a, nav li.active a, nav li a:hover  { background-color: #1a4f85; }
+nav ul li.current img, nav ul li.section img {position: absolute; bottom: -3px; left: 40%;}
+
+.nav.pull-xs-right { margin-top: 10px; }
+.nav.pull-xs-right a { color: #fff; font-size: 0.9rem; padding: 0.3rem 0; border-bottom: 1px solid #4d8dcb;}
+.nav.pull-xs-right a:hover { border-color: #fff; }
+.nav.pull-xs-right li.nav-item { margin-left: 1.5rem; }
+.nav.pull-xs-right span.glyphicon { position: relative; top: 2px; right: 2px; }
+.nav.pull-xs-right a.donate { display: inline-block; border-bottom: none; background-color: #fff; color: #555; padding: 0.3rem 0.8rem; }
+
+/***** Popup Menu (Navigation.ss) *****/
+nav ul li .secondDropdown {display: none;}
+nav ul li.hover .secondDropdown {display: block;}
+nav ul li .secondDropdown {position: absolute; top: 26px; left: 40%; margin: 0 0 0 -55px; z-index: 5; padding: 4px 0;}
+nav ul li .secondDropdown .menuBg {position: absolute; top: 0; left: 0; min-width: 136px; max-width: 236px; height: 100%; background: #856b28; opacity: .22; z-index: 10;}
+nav ul li .secondDropdown img {position: absolute; top: -5px; left: 40%; z-index: 15;}
+nav ul li .secondDropdown ul li {margin: 0 4px; padding: 0 8px; z-index: 20;}
+nav ul li .secondDropdown ul li, nav ul li .secondDropdown ul li a {display: block; width: 128px; background-color: #fff;}
+nav ul li .secondDropdown ul li a {padding: 8px 0 8px 15px; width: 112px; font-weight: normal; text-transform: capitalize; color: #589bdd /* PR edit -#679AAB*/; border-bottom: 1px solid #eae0c7; background: transparent url(../images/checked-arrow.gif) 6px center no-repeat;}
+nav ul li .secondDropdown ul li.section a, nav ul li .secondDropdown ul li a:hover {background: transparent url(../images/checked-arrow.gif) -13px center no-repeat;}
+nav ul li .secondDropdown ul li.last a {border-bottom: 0;}
+nav ul li .secondDropdown ul li a:hover {background-color: #589bdd/* PR edit - #679aab */; color: #fff;}
+
+/***** Extras (Extras.ss) *****/
+.component-extras {margin-top: 15px; background: #1a4f85/*PR edit -#589bdd*//*PR - #206c85*/; background-image: url('../images/bottombg.jpg'); background-repeat: repeat-x; padding-top: 18px; padding-left: 0;}
+.component-extras .extra img {display: block; padding: 52px 0; width: 220px; text-align: center;}
+.component-extras, .component-notes {border: 0;}
+.component-extras .extra {padding-bottom: 15px;}
+.component-extras h4, .component-extras h4 a {font-family: Georgia, serif; text-decoration: none; font-weight: normal; font-style: italic; color: #c8f5f9; margin: 0 0 14px 0;}
+.component-extras h4 a {padding-left: 2px;}
+.component-extras h4 a:hover {color: #c8f5f9;}
+.component-extras ul {margin: 0;}
+.component-extras ul li,
+.component-extras a,
+.component-extras .org,
+.component-extras .adr,
+.component-extras .hcard,
+.component-extras span {color: #e3fcfc;}
+.component-extras .vcard,
+.component-extras .hcard {margin-top: 10px;}
+.component-extras .vcard p,
+.component-extras .hcard p {margin: 0;}
+.component-extras a:hover {color: #e3fcfc;}
+.component-extras .button {background: url(../images/button-right.gif) top right no-repeat; padding: 5px 5px 5px 0; text-transform: uppercase; text-decoration: none;}
+.component-extras .button span {background: transparent url(../images/button-left.gif) top left no-repeat; padding: 5px 0 5px 5px; font-weight: bold;}
+.component-extras .button:hover,
+.component-extras .button:focus { color: #fff; cursor: pointer;}
+
+/***** Footer (Footer.ss) *****/
+footer {padding: 15px 0 15px 0; font-size: 0.8em; overflow: hidden; }
+body.HomePage footer {padding-left: 0;}
+footer,
+footer a {color: #679aab; font-weight: bold; text-transform: uppercase;}
+footer a:hover {color: #679aab; text-decoration: underline;}
+footer .span-13, footer .span-9 {padding: 0 25px; font-style:normal;}
+footer .span-13, footer .span-9 p {margin: 0;}
+footer .span-9 p {text-align: right; padding-left: 0;}
+footer .span-13 {padding-right: 0; margin-right: 15px;}
+footer .span-13 a {text-decoration: none;}
+
+/***** Home Featured Items *****/
+body.HomePage #slideshow {display: block; height: 350px; margin-bottom: 15px; background: #fbf8f1;}
+	/* PR Edit - New 2011 banner added inside slideshow-holder, slideshow holder resized accordingly (350px height) */
+	#Banner2011{
+	position: relative;
+	float: left;
+	clear: none;
+	width: 170px;
+	height: 350px;
+	background-color: transparent;
+	text-align: left;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	display: block;
+	}
+
+		#Banner2011 img{
+		 border: none;
+		}
+
+#slideshow-holder #navigation {position: absolute; bottom: 0; right: 0;}
+
+/***** Default Box *****/
+.tanBoxHolder, .dkBlueBoxHolder {position: relative; z-index: 1; padding-bottom: 4px;}
+.tanBox, .dkBlueBox {overflow: hidden;}
+.tanBoxHolder .lftBox, .dkBlueBoxHolder .lftBox {position: absolute; bottom: 0; left: 0; width: 4px; height: 4px; background: #fbf9f4;}
+.tanBoxHolder .rhtBox, .dkBlueBoxHolder .rhtBox {position: absolute; bottom: 0; right: 0; width: 4px; height: 4px; background: #fbf9f4;}
+.tanBox h2, .dkBlueBox h2 {font-style: italic; line-height: 1em;}
+.tanBox h4, .dkBlueBox h4 {margin-bottom: 10px;}
+.dkBlueBox.typography p {margin-bottom: 0;}
+.tanBoxHolder ul, .dkBlueBoxHolder ul {padding: 0;}
+
+	/***** Tan Box *****/
+	.tanBoxHolder {background: transparent;}
+	.tanBox {border: none;}
+
+	/***** Dk Blue Box *****/
+	.dkBlueBoxHolder {background: #b6dcdd;}
+	.dkBlueBox {border: 1px solid #497e95;}
+	.dkBlueBox.typography h4, .dkBlueBox.typography p {color: #fff;}
+	.dkBlueBox.typography h2 {color: #b2dbe1;}
+
+/***** Default Note *****/
+.noteHolder {position: relative; background: #fff; margin-top: 10px;}
+/*.noteHolder.span-5 {width: 212px; margin-right: 18px;}*/
+.note {overflow: hidden; margin: 0 0 28px 17px;}
+.noteHolder .lftPin {position: absolute; top: 0; left: 0; width: 21px; height: 31px; z-index:0; background: url(../images/pins.gif) top right no-repeat;}
+.noteHolder .rhtPin {position: absolute; top: 0; right: 0; width: 26px; height: 31px; z-index:0; background: url(../images/pins.gif) -2px 0 no-repeat;}
+.note h3 {position: relative; z-index:1; margin: 18px 17px 9px 0;}
+.note cite, .note .date {display: block; color: #979e9f; font-style: normal;}
+.note .date {margin-bottom: 13px;}
+.note .photos {padding-top: 5px;}
+.note .photos img {padding: 0 12px 12px 0;}
+.typography .note p {font-size: 16px; font-family: Georgia, serif; color: #2b2f2f; line-height: 1.3em;}
+.typography .note a {display: block; padding-left: 11px; background: url(../images/checked-arrow.gif) center left no-repeat;}
+
+/***** Notes (HomePage.ss) *****/
+.component-notes {padding-top: 0; background: #fbf9f4; /* PR edit - #fff*/ padding-left: 0;}
+.component-notes .note h4, .component-notes .note h4 a {font-family: Georgia, serif; font-weight: normal;}
+.component-notes .note h4 {color: #856b28;}
+.component-notes .note h4 a {color: #589bdd; /* PR edit - #1989a3*/ text-decoration: underline;}
+.component-notes .note p {font-family: Georgia, serif; color: #606466; }
+
+/***** Provinces (HomePage.ss) *****/
+.component-provinces h3, .component-provinces span {font-family: Georgia, serif; font-style: italic;}
+.component-provinces h3 {font-size: 24px; color: #856b28;}
+.component-provinces span {font-size: 14px; color: #606466;}
+.component-provinces .province-holder {position: relative; padding-bottom: 4px; background: #f0e8d6; margin-right: 29px;}
+.component-provinces .province {background: #fff; border: 1px solid #e3d0a8; padding: 11px; margin: 0;}
+.component-provinces .province a.img {display: block; text-align: center;}
+.component-provinces .province h3 {padding: 0 20px 0 0; text-align: right; margin: 10px 0 0 0; background: url(../images/arrow.gif) right center no-repeat;}
+.component-provinces .province h3 a {display: block; font-family: Arial, sans-serif; font-weight: bold; color: #679aab; text-decoration: none;}
+.component-provinces .last {margin-right: 0;}
+.component-provinces .province-holder .lftBox {position: absolute; bottom: 0; left: 0; width: 2px; height: 4px; background: #fbf9f4;}
+.component-provinces .province-holder .rhtBox {position: absolute; bottom: 0; right: 0; width: 2px; height: 4px; background: #fbf9f4;}
+
+/***** Featured Items (HomePage.ss) *****/
+.component-featured-items .feature {position: relative; width: 100%; min-height: 100px; max-height:100px; overflow: hidden; font-family: Georgia, serif; color: #fff; font-size: 1.6em; margin: 0; line-height: 1em; display: block; background: #589bdd; /*#206c85*/ padding: 15px 19px; border: 1px solid #e3d0a8; text-decoration: none;}
+.component-featured-items .feature span { display: block; position: absolute; bottom: 0; right: 0; font-size: 0.8em; color: #caeaed; font-style: italic; padding: 0; text-align:right; padding-right: 15px; padding-bottom: 15px;}
+
+/***** Breadcrumbs (BreadCrumbs.ss) *****/
+#Breadcrumbs {font-size: 11px; font-weight: bold; margin-bottom: 25px;}
+#Breadcrumbs p {color: #679aab; padding-left: 17px; margin-bottom: 0;}
+#Breadcrumbs span {letter-spacing:0px; padding: 0 2px; font-weight: normal;}
+#Breadcrumbs a {text-decoration: none; color: #679aab; font-weight: normal;}
+#Breadcrumbs a:hover {text-decoration: underline;}
+
+/***** Sidebar / Menu 2 (Sidebar.ss) *****/
+#Sidebar .dkBlueBoxHolder {margin: 0 30px 13px 30px;}
+#Sidebar .dkBlueBox {padding: 10px 12px 19px 12px; background: #497E95;}
+
+#Menu2 {
+	margin: 60px 30px 30px 30px;
+	border-bottom: 1px solid #DDD6BE;
+}
+	#Menu2 li {
+		font-size: 12px;
+		margin: 0;
+		background-color: #fcfbf7;
+	}
+	#Menu2 li a {
+		color: #589bdd; /*PR edit -#49899C*/
+		text-decoration: none;
+	}
+	#Menu2 li a, #Menu2 li span {
+		display: block;
+		padding: 10px 0 10px 15px;
+		font-weight: bold;
+	}
+	#Menu2 li a {background: url(../images/checked-arrow.gif) 6px center no-repeat;}
+	#Menu2 li span,
+	#Menu2 li.section a {background: url(../images/checked-arrow.gif) -13px center no-repeat;}
+	#Menu2 li ul.sub {
+		padding: 0;
+	}
+		#Menu2 li ul.sub li {
+			padding: 0;
+		}
+	#Menu2 li span,
+	#Menu2 li.section a,
+	#Menu2 li.current a {
+		background-color: #589bdd; /*PR edit - #49899C*/
+		color: #fff;
+	}
+	#Menu2 li.link a {
+		border-top: 1px solid #DDD6BE;
+	}
+	#Menu2 ul.sub,
+	#Menu2 ul.sub li ul {margin-bottom: 5px; background-color: #fcfbf7; padding-left: 7px;}
+	#Menu2 ul.sub li,
+	#Menu2 ul.sub li ul li {margin-top: 5px; background-color: #fcfbf7;}
+
+		#Menu2 ul.sub li span,
+		#Menu2 ul.sub li a {
+			color: #49899C;
+			border-top: 0;
+			padding: 2px 0 2px 25px;
+		}
+		#Menu2 ul.sub li span,
+		#Menu2 ul.sub li.section a,
+		#Menu2 ul.sub li.current a {
+			background-color: #755917;
+			color: #fff;
+			font-weight: normal;
+		}
+		#Menu2 ul.sub li.section a {background: #755917 url(../images/checked-arrow.gif) -6px center no-repeat;}
+
+		#Menu2 ul.sub li.link a {
+			background: transparent;
+			color: #49899C;
+			font-weight: normal;
+		}
+		#Menu2 ul.sub li a, #Menu2 ul.sub li.link a {background: url(../images/checked-arrow.gif) 13px center no-repeat;}
+		#Menu2 ul.sub li span, #Menu2 ul.sub li.link span {background-position: -6px center;}
+
+/***** Content (Page.ss) *****/
+#content h1, #content .typography { padding-left: 17px; }
+#content .typography h1 { padding-left: 0; }
+#content h1 {font-family: Georgia, serif; font-size: 24px; color: #856b28; margin-bottom: 1.3em;}
+
+
+
+
+.search-form .form-group { margin-right: 1rem; }
+.search-form .form-group.last { margin-right: 0; margin-left: 1rem; }
+
+/** todo - fix styles **/
+header .navbar-default {
+	background-color: transparent;
+	border: none;
+}
+header .navbar-toggle {
+	background-color: #f8f8f8;
+}
+header .navbar {
+	margin: 0;
+}
+.navbar-default form {
+	margin: 8px 0 0 15px;
+}

@@ -1,0 +1,70 @@
+.flickity-enabled {
+position: relative;
+}
+
+.flickity-enabled:focus { outline: none; }
+
+.flickity-viewport {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.flickity-slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-holder {
+    padding: 0;
+}
+.carousel {
+    background: #FAFAFA;
+}
+.flickity-slider {
+    transform: none;
+}
+.carousel-cell {
+    display: inline-block;
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+}
+.carousel-cell--center {
+    background-position: center left;
+}
+.carousel-cell--bottom {
+    background-position: bottom left;
+}
+.carousel-cell-content {
+    display: inline-block;
+    margin: 2rem 0 0 2rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and ( min-width: 768px ) {
+    .carousel img {
+        height: 300px;
+    }
+}
+
+/* buttons */
+.button-row {
+    
+}
+.button {
+    background: none;
+    border: none;
+    color: #000;
+    padding: 15px 25px;
+}
+.button:hover,
+.button.is-selected {
+    color: #fff;
+    background-color: #4d8dcb;
+}
