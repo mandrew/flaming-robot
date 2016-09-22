@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Background image with tile</title>
+        <meta name="description" content="Carousel">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../default/css/normalize.css" media="screen">
+        <style type="text/css">
+            * { box-sizing: border-box; }
+            body {
+                background-color: #000;
+                font-family: sans-serif;
+            }
+
+            .content {
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+
+            .hero-image {
+                position: relative;
+            }
+            .hero-image img {
+                width: 100%;
+                height: auto;
+            }
+            .hero-image .pattern {
+                position: absolute;
+                top: 0;
+                height: 100%;
+                width: 16%;
+                max-width: 149px; /* width of the svg image */
+                background-image: url(../image-challenge/img/floral-path.svg);
+                background-repeat: repeat-y;
+                background-position: top left;
+                background-size: contain;
+            }
+            .hero-image .pattern-left{
+                left: -1px;
+            }
+            .hero-image .pattern-right {
+                right: -1px;
+                -moz-transform: scaleX(-1);
+                -o-transform: scaleX(-1);
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+                filter: FlipH;
+                -ms-filter: "FlipH";
+            }
+        </style>
+    </head>
+    <body>
+        <header role="banner"><!-- --></header>
+
+        <main class="content" role="main">
+            <div class="hero-image">
+                <img src="./img/camps-bay-cape-town.jpg" />
+                <div class="pattern pattern-left"></div>
+                <div class="pattern pattern-right"></div>
+            </div>
+        </main>
+
+        <footer role="contentinfo"><!-- --></footer>
+    </body>
+</html>
