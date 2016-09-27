@@ -15,12 +15,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/fonts.css">
-
-        <!-- only on home -->
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2.0.3/dist/flickity.css" media="screen">
-        <link rel="stylesheet" href="css/carousel.css">
     </head>
-    <body class="home-page">
+    <body class="page">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -48,7 +44,7 @@
 
         <div class="wrap wrap-dkblue">
             <nav class="navbar fluid-container">
-                <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapsing-navbar" aria-controls="collapsing-navbar" aria-expanded="false" aria-label="Toggle navigation">&#9776;<span>Menu</span></button>
+                <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapsing-navbar" aria-controls="collapsing-navbar" aria-expanded="false" aria-label="Toggle navigation">&#9776; <span>Menu</span></button>
                 <div class="collapse navbar-toggleable-xs js-navbar" id="collapsing-navbar">
                     <span class="navbar-brand sr-only" href="#">Navigation</span>
                     <ul class="nav navbar-nav nav-inline">
@@ -153,115 +149,128 @@
             </nav>
         </div>
 
-        <div class="carousel-holder">
-            <div class="carousel" data-flickity>
-                <div class="carousel-cell carousel-cell--center" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg');">
-                    <div class="carousel-cell-content">
-                        <p class="lead">All Champagnat Marists share the same mission</p>
-                        <h3>To Make Jesus known and Loved</h3>
-                        <p>How are we doing this?</p>
-                        <button class="btn btn-primary">Find out more&nbsp;<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
-                    </div>
-                </div>
-                <div class="carousel-cell carousel-cell--bottom" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg');">
-                    <div class="carousel-cell-content">
-                        <h3>St Marcellin Champagnat</h3>
-                        <p>Founded our worldwide community of Brothers</p>
-                        <button class="btn btn-primary">Find out more&nbsp;<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
-                    </div>
-                </div>
-                <div class="carousel-cell carousel-cell--center" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg');">
-                    <div class="carousel-cell-content">
-                        <p class="lead">Where are you going in life?</p>
-                        <h3>Vocations to Marist Life</h3>
-                        <p>We respond to the needs of people of our time, especially the young and marginalised</p>
-                        <button class="btn btn-primary">Find out more&nbsp;<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
-                    </div>
-                </div>
-                <div class="carousel-cell carousel-cell--bottom" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg');">
-                    <div class="carousel-cell-content">
-                        <h3>Reflections &amp; Prayers</h3>
-                        <p>Discover the Marist way of prayer</p>
-                        <button class="btn btn-primary">Find out more&nbsp;<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
-                    </div>
-                </div>
-                <div class="carousel-cell carousel-cell--bottom" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg');">
-                    <div class="carousel-cell-content">
-                        <h3>5 Pillars</h3>
-                        <p>Do you know what they are and how significant they are to Marist life?</p>
-                        <button class="btn btn-primary">Find out more&nbsp;<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="button-row fluid-container">
-                <div class="button-group button-group--cells center-block">
-                    <button class="button is-selected">Marist Mission</button><button class="button">St Marcellin Champagnat</button><button class="button">Vocations</button><button class="button">Reflections &amp; Prayers</button><button class="button">Discover the 5 Pillars</button>
-                </div>
-            </div>
-        </div>
-
         <div class="wrap wrap-white-content">
+            <div class="breadcrumbs fluid-container">
+                <p class="pull-xs-right hidden-md-up"><a href="#level-2-menu">Skip to Level 2 menu</a></p>
+                <p><a href="home">Home</a> <span>//</span> About us</p>
+            </div>
             <main id="content" class="main-content fluid-container" role="main" tabindex="-1">
                 <!-- main content -->
                 <div class="row">
-                    <div class="col-md-4">
-                        <h3>News and Events</h3>
-                        <ul class="news-list list-unstyled">
-                            <li><a href="#">Marist projects provide refuge in after-math of Cyclone Winston<br><span class="text-nowrap">read more <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span></a></li>
-                            <li><a href="#">Brothers Gathering Brisbane<br><span class="text-nowrap">read more <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span></a></li>
-                            <li><a href="#">Sam Eathorne’s Birthday<br><span class="text-nowrap">read more <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span></a></li>
-                            <li><a href="#">Shifts<br><span class="text-nowrap">read more <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span></a></li>
-                            <li><a href="#">New Era Leadership (NEL)<br><span class="text-nowrap">read more <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span></a></li>
-                            <li><a href="#">On the big screen<br><span class="text-nowrap">read more <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span></a></li>
-                            <li><a href="#">What’s happening…Partnership in Samoa<br><span class="text-nowrap">read more <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span></a></li>
-                            <li><a href="#" class="btn btn-primary">View news and events <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></li>
-                        </ul>
+                    <div class="col-md-9 push-md-3">
+                        <div class="typography">
+                            <h1>About us</h1>
+
+                            <p>Who are we? We are a group of people who are attracted by this particular form of catholic charism/spirituality. We call ourselves Champagnat Marists or to keep it shorter sometimes just 'Marist' after the founder of our order St Marcellin Champagnat. We are made up of two distinct groups you may have noticed the title of our website 'Brother &amp; Lay together into a new world...' but who or what are Brothers &amp; Lay?</p>
+
+                            <h3>Brothers</h3>
+
+                            <p>To use another term you may be familiar with, brothers are monks. These men are not Catholic priests but are another type of Catholic vocation. Marist Brothers live together in communities and have taken vows (promises) of:</p>
+
+                            <ul>
+                            <li>poverty</li>
+                            <li>chastity</li>
+                            <li>obedience</li>
+                            </ul>
+
+                            <p>Much of the time, we wear ordinary clothes distinguished by a Marist cross and symbol. But there are occasions when we wear our traditional habit of soutane, knotted cord and and crucifix. Like Champagnat we are stirred by the love of God we have experienced and express that love through working with young people especially those on the margins.</p>
+
+                            <h3>Lay</h3>
+
+                            <p>Lay or 'the Laity' is a term for ordinary people within the catholic church. Champagnat Lay Marists are people from all different works of life, men and women who have decided to live the spirituality of Champagnat Marists. They are a diverse bunch of people but they live and work as any other ordinary person would but with this they also live in a Marist way working with Brothers to bring the good news of Jesus Christ to the world.</p>
+
+                            <h4>Together into a new world...</h4>
+
+                            <p>What does this mean? Well, the idea of an equal partnership between Brothers & Lay is only new. We plan together to support each other as we step into a new period of our history, creating a new way in a new world.</p>
+
+                            <p>In this new world we unite under the five pillars of our common charism:</p>
+
+                            <ul>
+                                <li>Presence</li>
+                                <li>Simplicity</li>
+                                <li>Family Spirit</li>
+                                <li>Love of Work</li>
+                                <li>In the Way of Mary</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <a href="#" class="card card-inverse">
-                                    <img class="card-img img-fluid" src="./images/images/Photo-2.jpg" alt="Welcome">
-                                    <div class="card-img-overlay">
-                                        <h3 class="card-title">Be part of the Lay Marist movement</h3>
-                                        <p class="card-text">Make a difference in the world</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6">
-                                <a href="#" class="card card-inverse">
-                                    <img class="card-img img-fluid" src="./images/images/Photo-5.jpg" alt="Card image">
-                                    <div class="card-img-overlay">
-                                        <h3 class="card-title">Marist spirituality and prayers</h3>
-                                        <p class="card-text">Great for leading large or small groups closer to God</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <a href="#" class="card card-inverse">
-                                    <img class="card-img img-fluid" src="./images/images/Photo-3.jpg" alt="Card image">
-                                    <div class="card-img-overlay">
-                                        <h3 class="card-title">Marist Brothers Champagnat Trust</h3>
-                                        <p class="card-text">Supporting the mission of the Marist Brothers</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6">
-                                <a href="#" class="card card-inverse">
-                                    <img class="card-img img-fluid" src="./images/images/Photo-4.jpg" alt="Card image">
-                                    <div class="card-img-overlay">
-                                        <h3 class="card-title">Marist resources</h3>
-                                        <p class="card-text">Need help with organising a Marist group? This is for you</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                    <div id="level-2-menu" class="left-menu col-md-3 pull-md-9">
+                        <h5 class="sr-only">Menu</h5>
+                        <ul class="nav list-unstyled">
+                            <li class="link first">
+                                <a href="#" title="Go to the Beginnings page"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Beginnings</a>
+                            </li>
+                            <li class="link ">
+                                <a href="#" title="Go to the St Marcellin Champagnat 1789–1840 page"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>St Marcellin Champagnat</a>
+                            </li>
+                            <li class="link ">
+                                <a href="#" title="Go to the District Logo page"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>District Logo</a>
+                            </li>
+
+                            <li class="link ">
+                                <a href="#" title="Go to the Our stories page"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Our stories</a>
+                            </li>
+
+                            <li class="link ">
+                                <a href="#" title="Go to the Aotearoa, New Zealand page"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Aotearoa, New Zealand</a>
+                            </li>
+
+                            <li class="link ">
+                                <a href="#" title="Go to the Fiji Islands page"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Fiji Islands</a>
+                            </li>
+
+                            <li class="section">
+                                <a href="#" title="Go to the Kiribati page"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Kiribati</a>
+                                <ul class="sub list-unstyled">
+                                    <li class="link no-children">
+                                        <a href="#" title="Go to the Fiji Islands page">One page</a>
+                                    </li>
+                					<li class="section">
+            							<a href="/about-us/our-stories/brothers/" title="Go to the Brothers page"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Brothers</a>
+            							<ul class="list-unstyled">
+        									<li class="current no-children">
+        										<span class="sub-item">Br Jone</span>
+        									</li>
+        									<li class="link no-children">
+        										<a href="/about-us/our-stories/brothers/br-john-hazelman/" title="Go to the Br John Hazelman page" class="link">Br John Hazelman</a>
+        									</li>
+            							</ul>
+                					</li>
+                                    <li class="link no-children">
+                                        <a href="#" title="Go to the Fiji Islands page">Another page</a>
+                                    </li>
+                                    <li class="link no-children">
+                                        <a href="#" title="Go to the Fiji Islands page">This is a page with a very long title to test what will happens once it reaches the edge</a>
+                                    </li>
+                				</ul>
+                            </li>
+
+                            <li class="link">
+                                <a href="#" title="Go to the Samoa page"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Samoa</a>
+                            </li>
+
+                            <li class="link ">
+                                <a href="#" title="Go to the American Samoa page"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>American Samoa</a>
+                            </li>
+
+                            <li class="link ">
+                                <a href="#" title="Go to the American Samoa page"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>This is a page with a very long title to test what will happens once it reaches the edge</a>
+                            </li>
+
+                            <li class="link no-children">
+                                <a href="#" title="Go to the Calendar page">Calendar</a>
+                            </li>
+
+                            <li class="link no-children last">
+                                <a href="#" title="Go to the Links page">Links</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </main>
+            <div class="content-note pull-md-right fluid-container">
+                <i>Is there something wrong with the information on this website? <a href="#">Tell us</a></i>
+            </div>
         </div>
 
         <div class="wrap wrap-grey-content search-form">
@@ -271,8 +280,8 @@
                         <p class="form-control-static">Need more help finding information?</p>
                     </div>
                     <div class="form-group search-text">
-                        <label for="inputPassword2" class="sr-only">Enter your search text here</label>
-                        <input type="text" class="form-control" id="inputPassword2" placeholder="Search here">
+                        <label for="input-search" class="sr-only">Enter your search text here</label>
+                        <input type="text" class="form-control" id="input-search" placeholder="Search here">
                     </div>
                     <button type="submit" class="btn btn-primary">Search</button>
                     <div class="form-group last">
