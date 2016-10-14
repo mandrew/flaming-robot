@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My first webapp</title>
+        <meta name="description" content="First web application">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="cleartype" content="on">
+
+        <!-- app manifest: check this is ok at https://manifest-validator.appspot.com/ -->
+        <link rel="manifest" href="manifest.json">
+
+        <!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="icon-large.png">
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="My first webapp">
+        <link rel="apple-touch-startup-image" href="/startup.png">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <style>
+        @media (display-mode: standalone) {
+			h3:after {content: " in standalone mode!"}
+		}
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header role="banner">
+            <h1>My first web app!</h1>
+        </header>
+
+        <main class="content" role="main">
+            <p>Hello world!</p>
+
+            <p>Thanks to: <a href="http://brucelawson.github.io/manifest/">Manifest generator</a>
+                <a href="https://codelabs.developers.google.com/codelabs/add-to-home-screen/index.html">Google</a>
+                <a href="https://pwa.rocks/">pwa rocks</a>
+            </p>
+        </main>
+
+        <footer role="contentinfo">
+            <!-- footer -->
+        </footer>
+
+        <script src="js/main.js"></script>
+        <!-- add service worker check -->
+        <script>
+            if ('serviceWorker' in navigator) {
+                console.log("Will the service worker register?");
+                navigator.serviceWorker.register('service-worker.js')
+                .then(function(reg){
+                    console.log("Yes, it did.");
+                }).catch(function(err) {
+                    console.log("No it didn't. This happened: ", err)
+                });
+            }
+        </script>
+    </body>
+</html>
