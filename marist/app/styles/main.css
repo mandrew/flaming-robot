@@ -46,6 +46,9 @@ html, body {
     margin: 0 0 8px;
     min-height: inherit;
 }
+.demo-layout.is-small-screen .demo-card {
+    margin-bottom: 0;
+}
 
 .demo-container {
   max-width: 1600px;
@@ -64,11 +67,12 @@ html, body {
   padding: 10px 13px;
 }
 .demo-layout.is-small-screen .mdl-card__title {
-    padding: 13px;
+    padding: 13px 13px 10px 13px;
 }
 .demo-layout.is-small-screen .mdl-card__text {
     padding-right: 13px;
     padding-left: 13px;
+    margin-bottom: 13px;
 }
 
 .demo-content h3 {
@@ -309,6 +313,11 @@ p.mdl-card__text {
     z-index: 3;
     box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.17);
     transition: transform 1s;
+    -webkit-transform: translateZ(0);
+    -moz-transform:    translateZ(0);
+    -ms-transform:     translateZ(0);
+    -o-transform:      translateZ(0);
+    transform:         translateZ(0);
 }
 .mdl-button-holder ul {
     display: -webkit-flex;
