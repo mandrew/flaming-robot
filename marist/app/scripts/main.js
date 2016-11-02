@@ -17,7 +17,7 @@
  *
  */
 /* stop safari from opening links in a new window */
-(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")
+(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone");
 /* eslint-env browser */
 (function() {
   'use strict';
@@ -74,5 +74,39 @@
     });
   }
 
-  // Your custom JavaScript goes here
+    // hide/show menu
+    var navigation = document.querySelectorAll('.js-menu-nav');
+    var lastScrollPosition = 0;
+
+    function navSlide() {
+        var newScrollPosition = window.scrollY;
+        var difference = lastScrollPosition - newScrollPosition;
+        var differenceIsSignificant = difference > 10 | difference < -10;
+        var scrollingUp = newScrollPosition < lastScrollPosition;
+        var scrollingDown = newScrollPosition > lastScrollPosition;
+        var bottomPage;
+
+        if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+            bottomPage = true;
+        }
+
+        if ( differenceIsSignificant ) {
+            if ( scrollingUp || bottomPage ) {
+                navigation.forEach(function(el) {
+                    el.classList.remove("menu-hidden")
+                })
+            } else if ( scrollingDown ) {
+                navigation.forEach(function(el) {
+                    el.classList.add("menu-hidden")
+                })
+            }
+        }
+
+        lastScrollPosition = newScrollPosition;
+    }
+
+    window.onscroll = function() {
+        navSlide();
+    };
+
 })();
