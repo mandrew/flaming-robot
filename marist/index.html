@@ -13,12 +13,8 @@
 
         <!-- <link rel="stylesheet" href="css/normalize.css"> -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/fonts.css">
-
-        <!-- only on home -->
         <link rel="stylesheet" href="https://unpkg.com/flickity@2.0.3/dist/flickity.css" media="screen">
-        <link rel="stylesheet" href="css/carousel.css">
+        <link rel="stylesheet" href="css/main.min.css">
     </head>
     <body class="home-page">
         <!--[if lt IE 8]>
@@ -31,9 +27,8 @@
                     <div class="col-md-6 push-md-6">
                         <!-- top navigation -->
                         <ul class="nav nav-inline pull-md-right">
-                            <li class="nav-item"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">News</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">News &amp; Events</a></li>
                             <li class="nav-item"><a class="nav-link" href="#search-form"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;Search</a></li>
                             <li class="nav-item"><a class="nav-link donate" href="#">Donate</a></li>
                         </ul>
@@ -52,7 +47,7 @@
                 <div class="collapse navbar-toggleable-xs js-navbar" id="collapsing-navbar">
                     <span class="navbar-brand sr-only" href="#">Navigation</span>
                     <ul class="nav navbar-nav nav-inline">
-                        <li class="active">
+                        <li class="">
                             <a class="nav-link" href="level-2.html">About us</a>
                             <div class="row menu2 quicklinks hidden-sm-down">
                                 <div class="col-md-6">
@@ -130,7 +125,7 @@
                         </li>
                         <li><a class="nav-link" href="#">Lay Marists</a></li>
                         <li><a class="nav-link" href="#">Ministries</a></li>
-                        <li><a class="nav-link" href="#">Spirituality</a></li>
+                        <li><a class="nav-link" href="spirituality.html">Spirituality</a></li>
                         <li>
                             <a class="nav-link" href="#">Resources</a>
                             <div class="menu2 hidden-sm-down">
@@ -155,7 +150,7 @@
 
         <div class="carousel-holder">
             <div class="carousel" data-flickity>
-                <div class="carousel-cell carousel-cell--center" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg');">
+                <div class="carousel-cell carousel-cell--center" style="background-image: url('../marist/images/images/mission.jpg');">
                     <div class="carousel-cell-content">
                         <p class="lead">All Champagnat Marists share the same mission</p>
                         <h3>To Make Jesus known and Loved</h3>
@@ -163,14 +158,14 @@
                         <button class="btn btn-primary">Find out more&nbsp;<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
                     </div>
                 </div>
-                <div class="carousel-cell carousel-cell--bottom" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg');">
+                <div class="carousel-cell carousel-cell--bottom" style="background-image: url('../marist/images/images/marcellin.png');">
                     <div class="carousel-cell-content">
                         <h3>St Marcellin Champagnat</h3>
                         <p>Founded our worldwide community of Brothers</p>
                         <button class="btn btn-primary">Find out more&nbsp;<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
                     </div>
                 </div>
-                <div class="carousel-cell carousel-cell--center" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg');">
+                <div class="carousel-cell carousel-cell--center" style="background-image: url('../marist/images/images/vocations.jpg');">
                     <div class="carousel-cell-content">
                         <p class="lead">Where are you going in life?</p>
                         <h3>Vocations to Marist Life</h3>
@@ -178,14 +173,14 @@
                         <button class="btn btn-primary">Find out more&nbsp;<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
                     </div>
                 </div>
-                <div class="carousel-cell carousel-cell--bottom" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg');">
+                <div class="carousel-cell carousel-cell--bottom" style="background-image: url('../marist/images/images/prayer.jpg');">
                     <div class="carousel-cell-content">
                         <h3>Reflections &amp; Prayers</h3>
                         <p>Discover the Marist way of prayer</p>
                         <button class="btn btn-primary">Find out more&nbsp;<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
                     </div>
                 </div>
-                <div class="carousel-cell carousel-cell--bottom" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg');">
+                <div class="carousel-cell carousel-cell--bottom" style="background-image: url('../marist/images/images/charism.jpg');">
                     <div class="carousel-cell-content">
                         <h3>5 Pillars</h3>
                         <p>Do you know what they are and how significant they are to Marist life?</p>
@@ -201,68 +196,115 @@
             </div>
         </div>
 
-        <div class="wrap wrap-white-content">
-            <main id="content" class="main-content fluid-container" role="main" tabindex="-1">
-                <!-- main content -->
-                <div class="row">
-                    <div class="col-md-4">
-                        <h3>News and Events</h3>
-                        <ul class="news-list list-unstyled">
-                            <li><a href="#">Marist projects provide refuge in after-math of Cyclone Winston<br><span class="text-nowrap">read more <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span></a></li>
-                            <li><a href="#">Brothers Gathering Brisbane<br><span class="text-nowrap">read more <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span></a></li>
-                            <li><a href="#">Sam Eathorne’s Birthday<br><span class="text-nowrap">read more <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span></a></li>
-                            <li><a href="#">Shifts<br><span class="text-nowrap">read more <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span></a></li>
-                            <li><a href="#">New Era Leadership (NEL)<br><span class="text-nowrap">read more <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span></a></li>
-                            <li><a href="#">On the big screen<br><span class="text-nowrap">read more <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span></a></li>
-                            <li><a href="#">What’s happening…Partnership in Samoa<br><span class="text-nowrap">read more <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span></a></li>
-                            <li><a href="#" class="btn btn-primary">View news and events <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <a href="#" class="card card-inverse">
-                                    <img class="card-img img-fluid" src="./images/images/Photo-2.jpg" alt="Welcome">
-                                    <div class="card-img-overlay">
-                                        <h3 class="card-title">Be part of the Lay Marist movement</h3>
-                                        <p class="card-text">Make a difference in the world</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6">
-                                <a href="#" class="card card-inverse">
-                                    <img class="card-img img-fluid" src="./images/images/Photo-5.jpg" alt="Card image">
-                                    <div class="card-img-overlay">
-                                        <h3 class="card-title">Marist spirituality and prayers</h3>
-                                        <p class="card-text">Great for leading large or small groups closer to God</p>
-                                    </div>
-                                </a>
-                            </div>
+        <main id="content" class="main-content" role="main" tabindex="-1">
+            <div class="wrap wrap-white-content">
+                <div class="fluid-container">
+                    <!-- main content -->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="#" class="card card-inverse">
+                                <img class="card-img img-fluid" src="./images/images/Photo-2.jpg" alt="Welcome">
+                                <div class="card-img-overlay">
+                                    <h3 class="card-title">Be part of the Lay Marist movement</h3>
+                                    <p class="card-text">Make a difference in the world</p>
+                                </div>
+                            </a>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <a href="#" class="card card-inverse">
-                                    <img class="card-img img-fluid" src="./images/images/Photo-3.jpg" alt="Card image">
-                                    <div class="card-img-overlay">
-                                        <h3 class="card-title">Marist Brothers Champagnat Trust</h3>
-                                        <p class="card-text">Supporting the mission of the Marist Brothers</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6">
-                                <a href="#" class="card card-inverse">
-                                    <img class="card-img img-fluid" src="./images/images/Photo-4.jpg" alt="Card image">
-                                    <div class="card-img-overlay">
-                                        <h3 class="card-title">Marist resources</h3>
-                                        <p class="card-text">Need help with organising a Marist group? This is for you</p>
-                                    </div>
-                                </a>
-                            </div>
+                        <div class="col-md-4">
+                            <a href="#" class="card card-inverse">
+                                <img class="card-img img-fluid" src="./images/images/Photo-5.jpg" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <h3 class="card-title">Live our Marist Spirituality</h3>
+                                    <p class="card-text">Prayer resources for leading groups closer to God</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" class="card card-inverse">
+                                <img class="card-img img-fluid" src="./images/images/Photo-3.jpg" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <h3 class="card-title">Support the Brothers mission</h3>
+                                    <p class="card-text">Find out more about the Marist Brothers Champagnat Trust</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </main>
-        </div>
+            </div>
+            <div class="wrap wrap-grey-content">
+                <div class="fluid-container">
+                    <h2 class="statement statement__large">Across the Pacific we are involved in a number of ministries which are giving hope to the young and marginalised</h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="#" class="card card-inverse">
+                                <img class="card-img img-fluid" src="./images/images/Photo-4.jpg" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <h3 class="card-title">Marist Education</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#" class="card card-inverse">
+                                <img class="card-img img-fluid" src="./images/images/Photo-4.jpg" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <h3 class="card-title">Mentoring</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#" class="card card-inverse">
+                                <img class="card-img img-fluid" src="./images/images/Photo-4.jpg" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <h3 class="card-title">Prison chaplaincy</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#" class="card card-inverse">
+                                <img class="card-img img-fluid" src="./images/images/Photo-4.jpg" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <h3 class="card-title">REMAR</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap wrap-white-content">
+                <div class="fluid-container">
+                    <div class="news-title">
+                        <h2>News and Events</h2>
+                    </div>
+                    <div class="row news-list">
+                        <div class="card col-md-4">
+                            <img class="card-img-top" src="./images/images/default.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <p class="date">15th November 2016</p>
+                                <h4 class="card-title"><a href="#">Marist projects provide refuge in after-math of Cyclone Winston</a></h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card col-md-4">
+                            <img class="card-img-top" src="./images/images/samoa.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <p class="date">15th November 2016</p>
+                                <h4 class="card-title"><a href="#">What’s happening…Partnership in Samoa</a></h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card col-md-4">
+                            <img class="card-img-top" src="./images/images/brisbane.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <p class="date">15th November 2016</p>
+                                <h4 class="card-title"><a href="#">Brothers Gathering Brisbane</a></h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">See all news and events <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                </div>
+            </div>
+        </main>
 
         <div class="wrap wrap-grey-content search-form">
             <div class="fluid-container center-block">
@@ -283,50 +325,6 @@
         </div>
 
         <div class="wrap wrap-grey-content join-top">
-            <div class="fluid-container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <h4>Our Stories</h4>
-                        <ul class="list-menu list-unstyled">
-                            <li class="link"><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Brothers</a></li>
-                            <li class="link"><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Lay Marist</a></li>
-                            <li class="link"><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Teachers</a></li>
-                            <li class="link"><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Families</a></li>
-                            <li class="link"><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Friends</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <h4>Ministries</h4>
-                        <ul class="list-menu list-unstyled">
-                            <li class="link"><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Schools</a></li>
-                            <li class="link"><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Attendance Dues</a></li>
-                            <li class="link"><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Marist Alternative Education</a></li>
-                            <li class="link"><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Mentoring</a></li>
-                            <li class="link"><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Prison Chaplaincy</a></li>
-                            <li class="link"><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>REMAR</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <h4>Vocations</h4>
-                        <ul class="list-menu list-unstyled">
-                            <li class="link"><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Brothers</a></li>
-                            <li class="link"><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Lay Marist</a></li>
-                            <li class="link"><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Schools</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <h4>Administration</h4>
-                        <ul class="list-menu list-unstyled">
-                            <li class="link"><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Schools</a></li>
-                            <li class="link"><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Professional Standards (NZ Province)</a></li>
-                            <li class="link"><a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Make a donation</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="wrap wrap-white-content">
             <div class="fluid-container">
                 <div class="row">
                     <div class="col-md-6">
