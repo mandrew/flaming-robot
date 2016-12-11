@@ -16,7 +16,7 @@
     "watch": "gulp watch",
     "docs": "mkdir -p core/static && npm run build -s && NODE_ENV=development node --harmony ./docs/index.js",
     "lock": "npm run lint:versions -s && npm shrinkwrap --dev && sed -i '' 's/https:/http:/g' npm-shrinkwrap.json",
-    "deploy": "git push origin master:gh-pages"
+    "deploy": "git push origin master"
   },
   "keywords": [],
   "author": "",
