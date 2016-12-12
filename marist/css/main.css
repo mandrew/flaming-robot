@@ -29,7 +29,7 @@ body {
     }
 }
 a, a:focus, a:hover {
-	color: #679aab;
+	color: #1a4f85; /*#679aab*/
 }
 a:focus, a:hover {
 	text-decoration: underline;
@@ -204,8 +204,8 @@ nav ul li .secondDropdown ul li a:hover {background-color: #589bdd/* PR edit - #
 footer {padding: 15px 0 15px 0; font-size: 0.8em; overflow: hidden; }
 body.HomePage footer {padding-left: 0;}
 footer,
-footer a {color: #679aab; font-weight: bold; text-transform: uppercase;}
-footer a:hover {color: #679aab; text-decoration: underline;}
+footer a {color: #cbdce3; font-weight: bold; text-transform: uppercase;}
+footer a:hover {color: #cbdce3; text-decoration: underline;}
 footer .span-13, footer .span-9 {padding: 0 25px; font-style:normal;}
 footer .span-13, footer .span-9 p {margin: 0;}
 footer .span-9 p {text-align: right; padding-left: 0;}
@@ -443,7 +443,7 @@ body.HomePage #slideshow {display: block; height: 350px; margin-bottom: 15px; ba
 	#content .typography { padding-left: 0; }
 }
 #content .typography h1 { padding-left: 0; }
-h1, h2, h3, h4, h5 {font-family: Georgia, serif; color: #856b28;}
+h1, h2, h3, h4, h5 {font-family: Georgia, serif; color: #6d510a;}
 h1 { font-size: 1.7rem; margin-bottom: 1.2rem;}
 h2 { font-size: 1.5rem; line-height: 1.4; }
 h3 { font-size: 1.3rem;}

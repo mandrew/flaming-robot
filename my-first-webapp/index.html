@@ -49,9 +49,22 @@
         </main>
 
         <footer role="contentinfo">
-            <small>Thanks to: <a href="http://brucelawson.github.io/manifest/">Manifest generator</a>
+            <small>Thanks to:<br>
+                <a href="http://brucelawson.github.io/manifest/">Manifest generator</a>
                 <a href="https://codelabs.developers.google.com/codelabs/add-to-home-screen/index.html">Google</a>
-                <a href="https://pwa.rocks/">pwa rocks</a>
+                <a href="https://pwa.rocks/">pwa rocks</a><br>
+                Other reading:<br>
+                <a href="https://developers.google.com/web/progressive-web-apps/">PWA intro</a>
+                <a href="https://8thlight.com/blog/rabea-gleissner/2016/09/14/intro-to-progressive-web-apps.html">PWA intro 2</a>
+                <a href="https://developers.google.com/web/updates/2015/11/app-shell">app shell</a>
+                <a href="https://developer.chrome.com/multidevice/android/installtohomescreen">install to home screen</a>
+                <a href="https://googlechrome.github.io/sw-toolbox/">service worker toolbox</a>
+                <a href="https://github.com/GoogleChrome/application-shell">app shell</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API">Service Worker API</a>
+                <a href="http://tutorialzine.com/2016/09/everything-you-should-know-about-progressive-web-apps">Everything about PWA</a><br>
+                Browser checks:<br>
+                <a href="https://jakearchibald.github.io/isserviceworkerready/">is service worker ready?</a>
+                <a href="https://whatwebcando.today/"></a>
             </small>
         </footer>
 
@@ -63,7 +76,7 @@
                 // service-worker.js should be in the root directory
                 navigator.serviceWorker.register('service-worker.js')
                 .then(function(reg){
-                    console.log("Yes, it did.");
+                    console.log("Yes, it did. Scope is" + reg.scope);
                 }).catch(function(err) {
                     console.log("No it didn't. This happened: ", err)
                 });
