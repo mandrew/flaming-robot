@@ -74,10 +74,11 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}*/
 .wrap-dkblue, .wrap-dkblue-content { background: #0e4274; /*1a4f85*/ }
 .wrap-white, .wrap-white-content { background: #fff;}
 .wrap-grey, .wrap-grey-content { background-color: #fcfbf7; } /* f5f5f6 */
+.wrap-brown, .wrap-brown-content { background-color: #ddd6be; }
 /* border-top: 1px solid #DDD6BE; border-bottom: 1px solid #DDD6BE; */
 .wrap-black { background-color: #000; }
 
-.wrap-white-content,.wrap-grey-content, .wrap-lightblue-content, .wrap-dkblue-content { padding: 3rem 0 3rem; }
+.wrap-white-content,.wrap-grey-content, .wrap-lightblue-content, .wrap-dkblue-content, .wrap-brown-content { padding: 3rem 0 3rem; }
 .block-content {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
