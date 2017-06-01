@@ -88,6 +88,13 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}*/
 
 .glyphicon.glyphicon-chevron-right { top: 0; font-size: 0.7rem; color: #666; }
 
+section.full-content, .full-content-large {
+	max-width: 784px;
+    max-width: 49rem;
+}
+.full-content-large {
+	margin: 0;
+}
 
 .center-block {
 	display: table;
@@ -581,6 +588,39 @@ position: relative;
     }
 }
 
+/* jumbotron */
+.jumbotron-slice {
+	background-image: url(../images/easter-sunrise.jpg);
+	/* https://pixabay.com/en/easter-easter-sunrise-cross-1443348/ */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.jumbotron {
+	background-color: transparent;
+	margin-bottom: 0;
+	padding-top: 5.5rem;
+	padding-bottom: 5.5rem;
+}
+.jumbotron h1 {
+	color: #fff;
+}
+.jumbotron .lead {
+	color: #fff;
+}
+.jumbotron .link {
+	max-width: 200px;
+	padding: 0;
+	margin: 0 2rem;
+	background-color: #fff;
+}
+.jumbotron .link:hover {
+	text-decoration: none;
+}
+.jumbotron .link h4 {
+	margin: 1rem 0;
+}
+
 /* buttons */
 .button {
     background: none;
@@ -595,4 +635,54 @@ position: relative;
 }
 @media screen and ( max-width: 543px ) {
 	.button { width: 100%; text-align: left; }
+}
+
+/* categories */
+.categories .btn {
+	background: none;
+	color: #000;
+}
+.categories .btn.current {
+	background-color: #0e4274;
+	color: #fff;
+}
+.category-item a {
+	display: inline-block;
+	padding: 0.8rem;
+}
+.category-item a:hover {
+	cursor: pointer;
+	text-decoration: none;
+	background-color: #ddd6be;
+}
+.category-item h5,
+.category-item p {
+	margin-left: 104px;
+}
+.category-item h5 {
+	margin-bottom: 0.4rem;
+}
+.category-item p {
+	font-size: 0.9rem;
+	color: #292b2c;
+}
+.category-item span.badge-bullet {
+	font-size: 0.8rem;
+	font-weight: normal;
+	border-radius: 0;
+}
+.img-holder {
+	padding: 3px;
+}
+.img-holder img {
+	margin: 0 auto;
+	margin-bottom: 3px;
+}
+.img-holder p {
+	margin: 0;
+	font-size: 0.8rem;
+	color: #fff;
+}
+.badge-bullet {
+	font-size: 10px;
 }
