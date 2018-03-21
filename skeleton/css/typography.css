@@ -1,0 +1,49 @@
+body {
+    font-family: Verdana, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+.summary {
+    
+}
+
+mark {
+  color: #555;
+  border-radius: .5rem;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+}
+
+strong, b {
+  font-weight: 700;
+}
+
+code {
+  vertical-align: bottom; /* Forces text to constrain to the line-height */
+}
+
+/* Links */
+a:link {
+    text-decoration: none;
+}
+a.button {
+    color: #fff;
+}
+a:hover, a:focus {
+    text-decoration: underline;
+}
+a.button:hover {
+    text-decoration: none;
+}
+a:visited {
+}
+a:active {
+}
+
+/* Horizontal Rule */
+hr {
+    border-top: 1px solid #aaa;
+}

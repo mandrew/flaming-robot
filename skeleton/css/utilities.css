@@ -1,0 +1,41 @@
+/* CSS Utilities - up to you if you want to use them - widths are the same as skeleton */
+/* Hide on different display sizes */
+@media (min-width: 750px) and (max-width: 1000px) {
+  .u-hide-on-tablets {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .u-hide-on-desktop {
+    display: none;
+  }
+}
+/* Display label inline */
+.u-label--inline {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-weight: normal;
+}
+/* Uppercase text */
+.u-uppercase {
+  text-transform: uppercase;
+}
+/* Disable selection */
+.u-no-select {
+  user-select: none;
+}
+
+@media print {
+    .u-show-on-print {
+        display: block;
+    }
+
+    .u-hide-on-print {
+        display: none;
+    }
+
+    .u-page-break {
+        display: block;
+        page-break-before: always;
+    }
+}
