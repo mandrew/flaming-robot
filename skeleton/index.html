@@ -14,8 +14,10 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/skeleton.css">
-        <!-- <link rel="stylesheet" href="css/grid/simple-grid.min.css"> -->
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/typography.css">
+        <link rel="stylesheet" href="css/utilities.css">
+
 
         <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     </head>
@@ -23,12 +25,35 @@
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
+        <a class="visuallyhidden focusable" href="#main-content">Skip to main content</a>
+
+        <header class="site-header" role="banner">
+            <div class="light-grey">
+                <div class="container">
+                    <div class="logo u-pull-left">
+                        <em class="logo-text">
+                            <a href="index.html" title="Home" aria-label="Home">Skeleton</a>
+                        </em>
+                    </div>
+                </div>
+            </div>
+            <nav role="navigation" class="nav container">
+                <ul class="nav-primary">
+                    <li>
+                        <a href="test-page.html">Test page</a>
+                    </li>
+                    <li>
+                        <a href="components/index.html">Components</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
         <!-- Add your site or application content here -->
-        <div class="container">
+        <main class="container" id="main-content">
             <div class="row">
                 <div class="ten columns">
-                    <h4>Basic Page</h4>
+                    <h1>Basic Page</h1>
                     <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
                 </div>
             </div>
@@ -58,7 +83,7 @@
             <div class="one-half column">1/2</div>
             <div class="one-half column">1/2</div>
             </div>
-        </div>
+        </main>
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

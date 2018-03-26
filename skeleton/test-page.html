@@ -28,19 +28,30 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <header role="banner" class="light-grey">
-            <div class="container">
-	    		<a class="brand u-pull-left" href="../index.html" alt="Back home">HTML5 Test Page</a>
-
-	    		<nav role="navigation">
-	    			<ul class="main-nav navbar nav-inline">
-	    				<li><a href="index.html">Home</a></li><li><a class="current" href="test-page.html">Test page</a></li><li><a href="main-template.html">Main Template</a></li><li><a href="#">Menu item</a></li>
-	    			</ul>
-	    		</nav>
+        <header class="site-header" role="banner">
+            <div class="light-grey">
+                <div class="container">
+                    <div class="logo u-pull-left">
+                        <em class="logo-text">
+                            <a href="index.html" title="Home" aria-label="Home">Skeleton</a>
+                        </em>
+                    </div>
+                </div>
             </div>
-    	</header>
+            <nav role="navigation" class="nav container">
+                <ul class="nav-primary">
+                    <li>
+                        <a class="current" href="test-page.html">Test page</a>
+                    </li>
+                    <li>
+                        <a href="components/index.html">Components</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-        <div class="container">
+        <main class="container" id="main-content">
+            <h1>Test page</h1>
             <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks.</p>
 
             <nav role="navigation">

@@ -11,9 +11,6 @@
    ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
 }
 
 /*
@@ -97,10 +94,25 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.container {
+   max-width: 1200px; /* origional 960px */
+}
 
+.light-grey {
+    background-color: #bfbfbf;
+}
 
+.grey {
+    background-color: #808080;
+}
 
+.dark-grey {
+    background-color: #404040;
+}
 
+.off-grey {
+    background-color: #E5E5E5;
+}
 
 
 
