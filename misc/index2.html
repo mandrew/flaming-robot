@@ -1,0 +1,221 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>MSD</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0" />
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.jpg">
+        <!-- Place favicon.ico in the root directory or link to it <link rel="icon" type="image/png" href="images/favicon.png"> -->
+
+        <link rel="stylesheet" href="cwp-watea-theme-2.0.2/dist/css/main.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+		<header>
+			<div class="container site-header">
+				<div class="skip-links">
+					<a href="#main">Skip to main content</a>
+					<!-- if Menu(2) --><a href="#pageNav">Skip to navigation within this section</a><!-- end if -->
+				</div>
+				<div class="site-header-brand">
+					<a title="Go to Home Page" class="site-header-brand-link-default" href="/">
+						<span>Home page title goes here</span>
+					</a>
+					<!-- if Tagline -->
+						<span class="site-header-brand-tagline">Tagline goes here</span>
+					<!-- end if -->
+				</div>
+				<button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<!-- if HeaderSearchForm -->
+				<div class="site-header-search">
+                    <form id="SearchForm_SilverStripe_CMS_Search_SearchForm" action="search/SearchForm" method="get" enctype="application/x-www-form-urlencoded" class="form-inline hidden-xs header-search pull-right" role="search">
+                        <div class="input-group">
+                            <input name="Search" aria-label="search" type="text" class="form-control" placeholder="Search...">
+                            <div class="input-group-btn">
+                                <button type="submit" class="btn btn-default">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                    <span class="sr-only">Search</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+				</div>
+				<!-- end if -->
+
+				<!-- if Locales -->
+					<div class="btn-group pull-right language-selector" id="header-language-toggle">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-language" aria-hidden="true"></i>
+							<span class="hidden-xs">
+								$SelectedLanguage
+							</span>
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<!-- loop Locales -->
+								<li class="active">
+									<a href="#" lang="LocaleRFC1766">
+										<!-- Note: if you have multiple locales within the same language, you can use $Title instead -->
+										English
+									</a>
+								</li>
+								<li>
+									<a href="#" lang="LocaleRFC1766">
+										Maori
+									</a>
+								</li>
+							<!-- end loop -->
+						</ul>
+					</div>
+				<!-- end if -->
+			</div>
+
+			<div class="main-nav">
+				<nav class="navbar navbar-default" aria-label="Main navigation">
+					<div class="container">
+						<div class="row">
+							<div class="collapse navbar-collapse" id="navbar-collapse">
+								<form class="navbar-form visible-xs" action="/search">
+								<!-- if HeaderSearchForm -->
+									<div class="site-header-search">
+                                        <form id="SearchForm_SilverStripe_CMS_Search_SearchForm" action="search/SearchForm" method="get" enctype="application/x-www-form-urlencoded" class="form-inline hidden-xs header-search pull-right" role="search">
+                                            <div class="input-group">
+                                                <input name="Search" aria-label="search" type="text" class="form-control" placeholder="Search...">
+                                                <div class="input-group-btn">
+                                                    <button type="submit" class="btn btn-default">
+                                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                                        <span class="sr-only">Search</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+									</div>
+								<!-- end if -->
+								</form>
+								<ul class="nav navbar-nav" role="menubar">
+									<!-- loop Menu(1) -->
+										<li role="menuitem" class="nav-item first current active">
+											<a href="#" aria-label="current page" class="current">Home</a>
+										</li>
+
+										<li role="menuitem" class="nav-item link dropdown">
+											<a href="$Link" class="link">Children</a>
+
+											<!-- if $Children -->
+												<button class="btn btn-link pull-right navbar-touch-caret" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">
+													<span class="sr-only">Display 3 submenu pages</span>
+													<i class="fa fa-caret-down" aria-hidden="true"></i>
+												</button>
+
+												  <ul class="dropdown-menu" role="menu" aria-hidden="true">
+													  <!-- loop Children -->
+														<li role="menuitem" class="dropdown-menu-item">
+															<a role="menuitem" href="#">Page 1</a>
+														</li>
+														<li role="menuitem" class="dropdown-menu-item">
+															<a role="menuitem" href="#">Page 2</a>
+														</li>
+														<li role="menuitem" class="dropdown-menu-item">
+															<a role="menuitem" href="#">Page 3</a>
+														</li>
+													  <!-- end loop -->
+												  </ul>
+											<!-- end if -->
+										</li>
+
+										<li role="menuitem" class="nav-item last link">
+											<a href="$Link" class="link">Styleguide</a>
+										</li>
+
+										<li role="menuitem" class="nav-item last link">
+											<a href="$Link" class="link">Contact</a>
+										</li>
+
+
+								<!-- end loop -->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<main id="main" class="main">
+			Layout
+		</main>
+
+		<!-- if ClassName == "HomePage" -->
+		<div class="page-showcase">
+			<div class="container">
+				<div class="row">
+					<!-- include PageShowcaseQuicklinks -->
+					<!-- include PageShowcaseFeatures -->
+				</div>
+			</div>
+		</div>
+		<!-- end if -->
+
+		<footer class="footer-site">
+			<div class="container">
+				<!-- if $SiteConfig.FacebookURL || $SiteConfig.TwitterUsername -->
+					<div class="footer-nav-links footer-social-links" role="complementary">
+						<a href="http://www.twitter.com/$SiteConfig.TwitterUsername">Follow us on Twitter</a>
+						<a href="http://www.facebook.com/$SiteConfig.FacebookURL">Follow us on Facebook</a>
+					</div>
+
+				<!-- if Footer.Children -->
+					<nav class="footer-nav-links" aria-label="Footer navigation">
+						<!-- loop Footer.Children -->
+							<a href="$Link" class="current <!-- if $LinkingMode = current --> active<!-- end if -->">
+								Home
+							</a>
+							<a href="$Link" class="link">
+								About us
+							</a>
+						<!-- end_loop -->
+					</nav>
+				<!-- end_if -->
+
+				<hr>
+				<a href="http://newzealand.govt.nz" class="footer-govt-logo">
+					<img src="images/newzealand-government-footer.png"
+						width="210"
+						alt="newzealand.govt.nz - connecting you to New Zealand central &amp; local government services"
+						/>
+				</a>
+
+				<p>
+					<small>&copy; 2017 Title goes here</small>
+				</p>
+			</div>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script src="cwp-watea-theme-2.0.2/dist/js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-XXXXX-Y', 'auto');
+		ga('send', 'pageview');
+		</script>
+    </body>
+</html>
