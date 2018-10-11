@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS only organization chart</title>
+<link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+	<h1>Hierarchical organization chart in pure CSS</h1>
+
+	<p>Original code: <a href="https://www.cssscript.com/responsive-hierarchical-organization-chart-pure-css/">Responsive Hierarchical Organization Chart In Pure CSS</a></p>
+	
+	<p>The approach was clean but wasn't a fan of the CSS so I thought I'd refactor it</p>
+
+    <div class="chart-wrapper">
+        <ol class="org-chart">
+            <li>
+                <a class="org-item" href="#" title="Name, Position">
+                    <p><strong class="org-item_name">Name</strong>,
+                    <span class="org-item_position">Position</span></p>
+                </a>
+                <ol>
+                    <li>
+                        <a class="org-item" href="#" title="Name, Position">
+						<p><strong class="org-item_name">Name</strong>,
+						<span class="org-item_position">Position</span></p>
+					</a>
+                    </li>
+                    <li>
+                        <a class="org-item" href="#" title="Name, Position">
+						<p><strong class="org-item_name">Name</strong>,
+						<span class="org-item_position">Position</span></p>
+					</a>
+                    </li>
+                    <li>
+                        <a class="org-item" href="#" title="Name, Position">
+						<p><strong class="org-item_name">Name</strong>,
+						<span class="org-item_position">Position</span></p>
+					</a>
+                        <ol>
+                            <li>
+                                <a class="org-item" href="#" title="Name, Position">
+							<p><strong class="org-item_name">Name</strong>,
+							<span class="org-item_position">Position</span></p>
+						</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a class="org-item" href="#" title="Name, Position">
+						<p><strong class="org-item_name">Name</strong>,
+						<span class="org-item_position">Position</span></p>
+					</a>
+                        <ol>
+                            <li>
+                                <a class="org-item" href="#" title="Name, Position">
+							<p><strong class="org-item_name">Name</strong>,
+							<span class="org-item_position">Position</span></p>
+						</a>
+                            </li>
+                            <li>
+                                <a class="org-item" href="#" title="Name, Position">
+							<p><strong class="org-item_name">Name</strong>,
+							<span class="org-item_position">Position</span></p>
+						</a>
+                            </li>
+                            <li>
+                                <a class="org-item" href="#" title="Name, Position">
+							<p><strong class="org-item_name">Name</strong>,
+							<span class="org-item_position">Position</span></p>
+						</a>
+                            </li>
+                            <li>
+                                <a class="org-item" href="#" title="Name, Position">
+							<p><strong class="org-item_name">Name</strong>,
+							<span class="org-item_position">Position</span></p>
+						</a>
+                            </li>
+                            
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+
+</body>
+</html>
