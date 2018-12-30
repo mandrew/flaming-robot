@@ -1,0 +1,101 @@
+/* Organisation Chart */
+.chart-wrapper {
+    padding: 1em;
+}
+.chart-wrapper *,
+.chart-wrapper *:before,
+.chart-wrapper *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.chart-wrapper ol {
+    list-style: none;
+    margin: 0;
+    padding-top: 1em 0 0;
+}
+.chart-wrapper ol,
+.chart-wrapper li,
+.chart-wrapper div {
+    position: relative;
+}
+
+/* default structure */
+.org-chart {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: -1em;
+    margin-right: -1em;
+}
+.org-chart ol {
+    margin-left: 0.65em;
+}
+.org-chart li {
+    flex-grow: 1;
+    padding-left: 0.6em;
+    padding-top: 0.6em;
+}
+.org-chart > li {
+    padding: 0; /* remove padding from first li */
+}
+
+/* Borders between items on chart */
+.org-chart li:before,
+.org-chart li:after {
+    background-color: #000066; /* create borders */
+    content: '';
+    position: absolute;
+}
+
+/* border - horizontal connectors */
+.org-chart li:not(:last-of-type):before,
+.org-chart li:last-of-type:before {
+    height: 1px;
+    left: 0;
+    top: 1.6em; /* line position - keep similar to other variable below */
+    width: 0.6em;
+}
+/* border - vertical connectors */
+.org-chart li:not(:last-of-type):after,
+.org-chart li:last-of-type:after {
+    left: 0;
+    top: 0;
+    width: 1px;
+}
+.org-chart li:not(:last-of-type):after {
+    height: 100%;
+}
+.org-chart li:last-of-type:after {
+    height: 1.6em; /* line position - keep similar to other variable above */
+}
+.org-chart > li:after,
+.org-chart > li:before {
+    display: none; /* hide connector for first item */
+}
+
+/* chart item */
+.org-chart .org-item {
+    display: inline-block;
+    font-family: arial, helvetica, sans-serif;
+    padding: 0.5em;
+    border: 1px solid #000066;
+    background-color: #b9d0ff;
+    color: #000066;
+    text-decoration: none;
+    transition: ease-in-out 0.1s;
+}
+.org-chart a.org-item:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 4px #333;
+    transform: scale(1.03);
+    transition: ease-in-out 0.1s;
+}
+.org-chart .org-item_position {
+    display: inline;
+}
+.org-chart > li > .org-item {
+    padding: 0.7em;
+    border-width: 2px;
+}
+/* Organisation Chart - END */
