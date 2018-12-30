@@ -1,0 +1,27 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.min.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Mocha Requires a <div> with ID Mocha to Inject UI -->
+  <div id="mocha"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.min.js"></script>
+
+  <script>mocha.setup('bdd')</script>
+
+  <!-- This Projects Libraries / Pieces of Code Here -->
+  <script src="../service-worker.js"></script>
+  <script src="/test/utils/wait-for-sw-state.js"></script>
+
+  <!-- This Projects Unit Tests Here -->
+  <script src="browser/browser-test.js"></script>
+
+  <script>
+    mocha.checkLeaks();
+    mocha.run();
+  </script>
+</body>
+</html>

@@ -1,6 +1,8 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
 html {
+    /* "serif sucks!" - Jake Archibald */
+    font-family: sans-serif;
     color: #222;
     font-size: 1em;
     line-height: 1.4;
