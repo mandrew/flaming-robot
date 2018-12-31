@@ -45,11 +45,19 @@
         <main class="content" role="main">
             <p>What do I need?</p>
             <ol>
-                <li>HTTPS</li>
-                <li>Create a <a href="http://brucelawson.github.io/manifest/">manifest.json</a> file</li>
+                <li>HTTPS hosting for your app</li>
+                <li>Create a <a href="http://brucelawson.github.io/manifest/">manifest.json</a> file which needs the following set:
+                    <ul>
+                        <li><code>name</code></li>
+                        <li><code>short_name</code></li>
+                        <li><code>start_url</code></li>
+                        <li><code>display</code> with a value of standalone or fullscreen</li>
+                        <li><code>icons</code> which includes one image set to (at least) 144×144, in png format e.g. <code>"icons": [ { "src": "/images/icon-144.png", "sizes": "144x144", "type": "image/png" } ]</code></li>
+                    </ul>
+                </li>
                 <li><a href="http://manifest-validator.appspot.com/">Validate</a> the manifest file and add it to your site html</li>
                 <li>Register a service worker</li>
-                <li>Confirm it works by using chrome dev tools > Network > tick 'Offline' and refresh page</li>
+                <li>Confirm it works offline by using chrome dev tools > Network > tick 'Offline' and refresh page</li>
             </ol>
 
             <p><a href="about.html">Next page ></a></p>
