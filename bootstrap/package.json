@@ -1,0 +1,52 @@
+{
+  "name": "twbs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run watch -s",
+    "report:css": "gulp report:css",
+    "lint": "npm run lint:versions -s && npm run lint:js -s && npm run lint:sass -s",
+    "build": "NODE_ENV=development gulp build",
+    "dist": "NODE_ENV=production gulp build",
+    "css": "gulp css",
+    "critical:css": "gulp critical:css",
+    "js": "gulp js",
+    "svg": "gulp svg",
+    "watch": "gulp watch",
+    "docs": "mkdir -p core/static && npm run build -s && NODE_ENV=development node --harmony ./docs/index.js",
+    "lock": "npm run lint:versions -s && npm shrinkwrap --dev && sed -i '' 's/https:/http:/g' npm-shrinkwrap.json",
+    "deploy": "git push origin master"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.0.0-alpha.5",
+    "csscomb": "^3.1.7",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "sass-lint": "^1.10.2"
+  },
+  "dependencies": {
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.18.2",
+    "browserify": "^13.1.1",
+    "browserify-incremental": "^3.1.1",
+    "bundle-collapser": "^1.2.1",
+    "critical": "^0.8.1",
+    "gulp-inject": "^4.1.0",
+    "gulp-parker": "^0.1.4",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-uglify": "^2.0.0",
+    "sass-module-importer": "^1.4.0",
+    "uglifyify": "^3.0.4",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
