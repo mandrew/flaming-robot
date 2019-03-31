@@ -1,0 +1,1290 @@
+/* -----------------------------------
+ 1334px wide and below
+ ----------------------------------- */
+@media (max-width: 1334px) {
+	#home #news {
+		margin: 0 -25px 0 -25px;
+		width: 105%;
+	}
+}
+/* -----------------------------------
+ 1140px wide and below
+ ----------------------------------- */
+@media (max-width: 1140px) {
+	.js-on .container, .js-on #breadcrumbs span, .js-on .sub-nav .container {width: 95%;}
+	.js-on .container.banner { width: 100%; }
+	.js-on .container.banner .container { width: 95%; } /* override for header */
+	.js-on #content {
+		width: 65%;
+		margin-right: 0;
+		min-height: 0;
+		border-right: none;
+	}
+	.js-on .two-col-content {width:102.9%!important;}
+	.js-on .full-width {width: 100%;}
+	.js-on #related-links-left {width: 28%;}
+	.js-on #main, .ie7 body#home .js-on #main {width: 100%;}
+	.js-on #header {
+		position: relative;
+		top: 0;
+	}
+	.banner.container {
+		background-position: -250px 0 !important;
+	}
+
+	/* mega menu */
+	.js-on .primary-nav .sub-nav-group li {
+		max-width: 24.5%;
+	}
+
+	/* page content */
+	.js-on #breadcrumbs {
+		margin: 0;
+		width: 98%;
+		float: left;
+	}
+	.js-on #above-pannel #second-level-toggle {clear: left;}
+	.js-on content .tableWrap {
+		overflow-x: auto;
+		display:block;
+	}
+	.js-on #content .unfloat{float:none!important;}
+	.js-on #sidebar {display: none;}
+
+	/*home*/
+	#home .js-on .container {width:100%;}
+	#home .banner.container.js-on .container { width: 95%; }
+	#home div.js-on #content {
+		margin: 0;
+		padding: 0;
+	}
+	.js-on .summary {margin-right: 30px;}
+	#home #news {
+		width: 106%;
+	}
+
+	/* landing */
+	.js-on #sectionhead {display: none;}
+	.js-on #sectionhome #main, body#sectionhome.js-on #main {background-image: none !important;}
+	.js-on #content .colFloat {width:44%;}
+}
+
+/* -----------------------------------
+ 1024px wide and below
+ ----------------------------------- */
+@media (max-width: 1024px) {
+	#home .header-nav .container { width: 95%; }
+	.primary-nav a,
+	.primary-nav span {
+		margin-right: 30px;
+	}
+	.js-on header .search {
+		max-width:254px;
+	}
+	.js-on header .search input.input {
+		max-width:237px;
+	}
+	#home #news {
+		margin: 0;
+		width: 100%;
+	}
+
+	#home div.js-on {
+		/*overflow: hidden; <-- this cause the issues with search autocomplete dropdown hidden behind */ 
+		width: 100%;
+	}
+	#home .hero-feature {
+		margin: 0;
+		background-size: 106%;
+		background-color: #f8f3f2;
+	}
+	#home .hero-banner {
+		width:50%;
+		margin-left: 20px;
+	}
+	#home #alertbox,
+	#home #warning1,
+	#home #warning2,
+	#home #feature-buttons {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	#home #feature-buttons {
+		width: 96%;
+	}
+	/*#home #feature-buttons .promotional1,#home #feature-buttons .promotional2{
+		margin:0;
+	}*/
+
+	/* mega menu */
+	.js-on .primary-nav .sub-nav-group li {
+		display: block;
+		float: left;
+	    width: 33.3%;
+		max-width: 100%;
+	}
+	.js-on .primary-nav .sub-nav-group a {
+		display: block;
+	}
+	.js-on .primary-nav-item > a,
+	.js-on .primary-nav-item > span {
+		margin-right: 30px;
+	}
+	.js-on .sub-nav-group li:nth-child(4) .line {
+	    background-color: #e7e7e7;
+	}
+	.js-on .primary-nav .sub-nav-group li:nth-child(4) a,
+	.js-on .primary-nav .sub-nav-group li:nth-child(4) .line,
+	.js-on .primary-nav .sub-nav-group li:nth-child(8) a,
+	.js-on .primary-nav .sub-nav-group li:nth-child(8) .line {
+		margin-right: 10px;
+	}
+	.js-on .primary-nav .sub-nav-group li:nth-child(3) a,
+	.js-on .primary-nav .sub-nav-group li:nth-child(3) .line,
+	.js-on .primary-nav .sub-nav-group li:nth-child(6) a,
+	.js-on .primary-nav .sub-nav-group li:nth-child(6) .line,
+	.js-on .primary-nav .sub-nav-group li:nth-child(9) a,
+	.js-on .primary-nav .sub-nav-group li:nth-child(9) .line {margin-right: 0}
+	.js-on .primary-nav .sub-nav-group li.no-line-4-wide .line {
+		background-color: #e7e7e7;
+	}
+	.js-on .primary-nav .sub-nav-group li.no-line-3-wide .line {
+		background-color: #fff;
+	}
+	.js-on #home .header-nav > div.js-on {
+		overflow: inherit;
+	}
+	.js-on .primary-nav .sub-nav-group a,
+	.js-on .primary-nav .sub-nav-group .line {
+		max-width: none;
+		margin-right: 9px;
+		margin-left: 1px;
+	}
+}
+
+/* -----------------------------------
+ 870px wide and below
+ ----------------------------------- */
+@media (max-width: 870px) {
+	.js-on .container #content {width: 100%;}
+	.js-on #related-links-left {display: none;}
+	.js-on #search-text-wrap {display: none;}
+	.js-on #login, .nav-icon {
+		padding-bottom: 8px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 8px;
+		width:auto;
+		float:left;
+		margin-bottom: 5px;
+		margin-left: 3px;
+		margin-right: 0;
+		margin-top: 5px;
+		padding-bottom: 8px;
+		font-size: 112%;
+	}
+	.js-on .search {
+		float: left;
+		margin-top: 5px;
+	}
+	.js-on .search-icon {margin-left: 3px;}
+	.js-on .highlight {
+		background-color: #fff;
+		-moz-border-radius: 0; /* FF1+ */
+		-webkit-border-radius: 0; /* Saf3-4 */
+		border-radius: 0; /* Opera 10.5, IE 9, Saf5, Chrome */
+		-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.7); /* FF3.5+ */
+		-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.7); /* Saf3.0+, Chrome */
+		box-shadow: 0 0 0 rgba(0, 0, 0, 0.7); /* Opera 10.5+, IE 9.0 */
+		padding: 0px 0px;
+		margin: 0;
+	}
+	.js-on nav .nav-icon {padding :21px 63px 20px 0!important;}
+.js-on #nav-wrap {top:-3px; /*-67px*/}
+	.js-on .online-services > div {
+		float:none;
+		clear:both;
+		width:99% !important;
+		display:inline-block;
+		/*max-width:287px;*/
+	}
+	.js-on .online-services > div.x-long {
+	    /* styling for x-long text button - could be merged into above */
+		height: auto;
+	}
+	.js-on .online-services .block {
+		/*margin-right: 0 !important;*/
+		min-height: auto !important;
+	}
+	.js-on .online-services  .col2 {padding: 20px 0 0;}
+	.js-on .online-services {width: 100%;}
+	.js-on #header a.nav-icon {display:block;}
+
+	/* Home */
+	#home.js-on div.js-on .margin-all {padding-top: 10px;}
+	#home #feature-buttons .promotional1,
+	#home #feature-buttons .promotional2 {
+		background-size: 76px;
+		width: 37%;
+		min-height: 50px;
+		background-position: -20px;
+	}
+	#home #feature-buttons .promotional1 h3,
+	#home #feature-buttons .promotional2 h3 {
+		font-size: 111%;
+	}
+}
+
+/* -----------------------------------
+ 870px wide and below
+ ----------------------------------- */
+@media (max-width: 870px) {
+	.js-on .container #content {width: 100%;}
+	.js-on .two-col-content {width:102.9%!important;}
+	.js-on #related-links-left {width: 39%;}
+	.js-on #content .rightFloat {
+		width: 100%;
+		float: none;
+	}
+	.js-on #content .helprightcol {width: 100%;}
+	.js-on #banner-bg {background-position: 360px 0!important;}
+	.js-on .top-nav,
+	.js-on .primary-nav  {
+		background: none;
+		width: 50px;
+		float:left;
+		display:none;
+	}
+	.js-on .site-header .mobile-nav {
+		display: block; /* show mobile navigation */
+	}
+	.js-on .primary-nav a {display:none;}
+	.js-on .mobile-nav a#home-icon-mob {display:block;}
+	.js-on #header #navigation-float  {width: auto!important;}
+	.js-on header .mobile-nav {float: right;}
+	.js-on #banner-blue {height: 155px!important;}
+	.js-on a#home-icon:hover, .js-on a#home-icon:active {
+		background-color: #282D41 !important;
+		transition-duration: 0.5s;
+		-webkit-animation-duration: 1s;
+		-webkit-animation-delay: 0.5s;
+		-webkit-animation-timing-function: linear;
+	}
+
+	.js-on .lsvlogo {
+		float: none!important;
+		margin: 0!important;
+		padding: 0!important;
+	}
+
+	/* home */
+	body#home.js-on div.js-on .margin-all {padding-top:0;}
+	#home .hero-feature {background-position: right top;}
+	#home .hero-banner{
+		margin-top:25px;
+		margin-bottom: 25px;
+		width: 45%;
+	}
+	#home #news {
+		margin: 0;
+		width: 100%;
+	}
+	#home #news .story {
+		width:50%;
+		height:100%;
+	}
+	#home #news #story3 a {border-left: none;}
+	#home #news .story-text {width:auto;}
+}
+
+/* -----------------------------------
+ 769px wide and above
+ ----------------------------------- */
+@media (min-width: 769px) {
+	.ie8 .js-on .search-page .keymatch {
+		left: -3px;
+		position: relative;
+	}
+}
+
+/* -----------------------------------
+ 768px wide and below - design changes to tablet
+ ----------------------------------- */
+@media (max-width: 768px) {
+	.js-on	#banner-bg {
+		width: 759px;
+		top: 76px;
+		background-size: contain!important;
+		background-position: 340px 0!important;
+		max-height: 200px;
+	}
+	.js-on #banner-blue {height: 165px !important;padding-top: 20px !important;}
+	.js-on .margin-all {float: none;}
+	.js-on #header #mobile-icons-wrap {
+		display: block;
+		position: absolute;
+		top: 57px;
+	}
+	.js-on	body {margin: 0 20px;}
+	.js-on	.container {
+		left: 0px;
+	}
+	.js-on	#header {
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.js-on	#header .logo {margin-right: 0;}
+	.js-on	#header .logo-winz {
+		background: url('../images/logo-winz.png') no-repeat;
+		background: none,  url("../images/logo-winz.svg") bottom left no-repeat; /* logo-winz-tablet.png */
+		background-size:293px 42px;
+		width: 293px;
+		height: 42px;
+	}
+	.js-on	#header hr {margin-bottom: 10px!important;}
+	.js-on .nav-icon {
+		float:left;
+		margin-bottom: 5px;
+	    margin-left: 3px;
+	    margin-right: 0;
+	    margin-top: 5px;
+	    padding-bottom: 8px;
+	    font-size: 112%;
+	}
+.js-on #nav-wrap {top: -3px; /*-74px*/}
+
+	/*GSA*/
+	.js-on	#search .ss-gac-m {
+		clear: both;
+		float: none;
+		width: 280px !important;
+		top: 0;
+		left: 0;
+	}
+	.js-on	.ie7 nav .arrow-closed:hover, .js-on .ie7 nav .arrow-open:hover {
+		border-top: 1px solid #b2b2b2 !important;
+		border-right: 1px solid #b2b2b2 !important;
+		border-left: 1px solid #F5F5F5 !important;
+		border-bottom: 1px solid #F5F5F5 !important;
+	}
+	.js-on .ie8 nav .arrow-closed:hover, .js-on .ie8 nav .arrow-open:hover {border: 1px solid #F5F5F5 !important;}
+	.js-on #breadcrumbs {
+		padding-bottom: 0px !important;
+		padding-top: 0px !important;
+	}
+	.js-on #breadcrumbs span {padding: 6px 0;}
+	.js-on #main {
+		padding-left: 20px;
+		margin-left: 0px;
+		padding: 0;
+		width: 100%;
+	}
+	.ie7 .js-on #main p {clear: both;}
+	.js-on #content {
+		padding: 0 0 35px 0;
+		border-right: 0;
+		background: none;
+		width: 100%;
+	}
+	.ie7 .js-on #content {
+		position: relative;
+		padding-top: 0px !important;
+		padding-bottom: 0px;
+		float: left;
+	}
+	.js-on #content h1 {
+		margin: 0;
+		background: none;
+		font-size: 210%;
+		padding:0;
+		clear:both;
+	}
+	.js-on #main #content .summary {margin: 10px 0;}
+	.js-on #main #second-level-nav {
+		clear: both;
+		margin-top: 10px;
+	}
+	.js-on #main .hr {clear: both;}
+	.ie7 .js-on #second-level-nav {
+		float: none;
+		clear: both;
+	}
+
+	.js-on .related-pages, .js-on .contact-us  {margin: 15px 0px 0 0px;}
+
+	/* search */
+	.ie8 .js-on .search-page .results {display:none!important;}
+	.ie8 .js-on .search-page .advanced {display:none!important;}
+	.ie8 .js-on .search-page blockquote {margin:0!important;}
+	.ie8 .js-on .search-page .keymatch {width:100%!important;}
+
+	.js-on .online-services a.finance {padding-right:0px!important;}
+	.js-on .online-services .button a {padding-top:10px!important;}
+	.js-on .online-services .button.button-mymsd a {padding-top:0!important;}
+	.js-on .online-services .button a div {margin-top:-2px!important;}
+	.js-on .online-services .long a {padding-top:8px!important;line-height:1em!important;}
+	.js-on .online-services .long a div {margin-top:0px!important;}
+	a.check-what-you, a.school-year, a.accomm {
+		line-height: normal;
+		padding-bottom: 0 !important;
+	}
+
+    /* home */
+    #home #feature-buttons {width: 94.8%;}
+
+}
+
+/* -----------------------------------
+ between 750px and 770px
+ ----------------------------------- */
+@media (min-width: 750px) and (max-width: 770px) {
+	body#section-landing .two-col ul li:nth-child(2n+1) .online-services .block {margin-right:22px;}
+	#home .hero-feature {
+		margin: 0;
+	}
+	#home .hero-banner {width: 50%;}
+
+}
+
+/* -----------------------------------
+ 750px wide and below
+ ----------------------------------- */
+@media (max-width: 750px) {
+	.js-on #content .swipe, .js-on #content .crop-left, .js-on #content .crop-right {
+		display: block;
+		overflow-x: hidden;
+		float: left;
+		width: 100%;
+		position: relative;
+	}
+	.js-on #content .swipe {overflow-x: auto;}
+	.js-on #content .crop-right img {
+		float: left;
+		max-width: none;
+	}
+	.js-on #content .crop-left img {
+		float: right;
+		max-width: none;
+	}
+	.js-on #content .swipe img {
+		float: left;
+		max-width: none;
+		overflow-x: auto;
+	}
+	.js-on .swipe-overlay {background: url("../images/swipe.png") center center no-repeat;}
+	.js-on .swipe-overlay img {
+		transition: opacity 500 ease-in-out;
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+	}
+	.js-on .swipe-table-overlay {background: url("../images/swipe.png") center 55px no-repeat;}
+	.js-on .swipe-table-overlay table {
+		transition: opacity 500 ease-in-out;
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+	}
+
+	/* Home */
+	#home .hero-feature{
+		width: auto;
+		margin:0;
+		min-height: 200px;
+		background-size: 100% auto;
+		background-position: 15px -30px;
+	}
+	#home .hero-banner{
+		width: auto;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+		margin-top: 20px;
+	}
+	#home .hero-banner .summary {
+		margin: 25px 17px;
+		padding: 0;
+		min-height: 100px;
+		width: 45%;
+	}
+	#home .hero-banner .popular-topics {
+		width: auto;
+		padding: 20px;
+		margin: 0;
+		background-color: #f7f1f0;
+	}
+
+    #home #feature-buttons {width: 94.5%;}
+
+}
+
+/* -----------------------------------
+ between 749px and 655px
+ ----------------------------------- */
+@media (min-width: 655px) and (max-width: 749px) {
+	body#section-landing .two-col ul li:nth-child(2n+1) .online-services .block {
+		margin-right:22px;
+	}
+}
+
+/* -----------------------------------
+ between 651px and 685px
+ ----------------------------------- */
+@media (min-width: 651px) and (max-width: 685px) {
+	body#section-landing .two-col ul li:nth-child(2n+1) .online-services .block {
+		margin-right:22px;
+	}
+	.js-on .online-services .min-long a {padding-top:12px!important;line-height:normal!important;padding-right:28px;}
+	.js-on .online-services .min-long a div {margin-top:-4px!important;}
+
+	/* Home */
+    #home #feature-buttons {width: 94%;}
+	#home #feature-buttons .promotional2 h3 {margin: 0;}
+	#home #feature-buttons .promotional2 h3 span {
+		margin-top: -10px;
+		display: inline-block;
+	}
+}
+
+/* -----------------------------------
+ 650px wide and above
+ ----------------------------------- */
+@media (max-width: 650px) {
+	.js-on	#search form { max-width: 240px; }
+	.js-on	#search input.input { max-width: 223px; }
+	.js-on	#search-mobile  { width: 288px;}
+	.js-on	#search-mobile  { width: 288px;}
+	.js-on .online-services a.finance {padding-right:0px!important;}
+	.js-on .online-services .button a {padding-top:10px!important;}
+	.js-on .online-services .button a div {margin-top:-2px!important;}
+	.js-on .online-services .long a {padding-top:5px!important;line-height:1em!important;}
+	.js-on .online-services .long a div {margin-top:2px!important;}
+	#home #feature-buttons {width: 93.8%;}
+	#home #feature-buttons .promotional2 h3 span {
+		margin-top: -5px;
+		display: inline-block;
+	}
+
+}
+
+/* -----------------------------------
+ 633px wide and below
+ ----------------------------------- */
+@media (max-width: 633px) {
+	.js-on .online-services a.finance {padding-right:0px!important;}
+	.js-on .online-services .button a {padding-top:10px!important;}
+	.js-on .online-services .button a div {margin-top:-2px!important;}
+	.js-on .online-services .long a {padding-top:10px!important;line-height:1em!important;}
+	.js-on .online-services .long a div {margin-top:-2px!important;}
+
+	#home #feature-buttons .promotional2 h3 span {
+		display: block;
+	}
+
+	#home #feature-buttons .promotional1,
+	#home #feature-buttons .promotional2 {
+		float: none;
+		display: block;
+		width: auto;
+		height: auto;
+		margin-top: 10px;
+		padding-left: 65px;
+		background-size: 70px;
+	}
+	#home #feature-buttons .oneLine h3 {
+		margin:10px 0;
+	}
+	#home #feature-buttons p {
+		margin-top:0;
+	}
+	#home #feature-buttons .promotional2 h3 span {
+		margin-top:0;
+		display:inline-block;
+	}
+}
+
+/* -----------------------------------
+ between 600px and 654px
+ ----------------------------------- */
+@media (min-width: 600px) and (max-width: 654px) {
+	body#section-landing .two-col ul li:nth-child(2n+1) .online-services .block {
+		margin-right:12px;
+	}
+}
+
+/* -----------------------------------
+ 601px wide and above
+ ----------------------------------- */
+@media (min-width: 601px) {
+	.js-on #search-mobile {display: block !important;}
+}
+
+/* -----------------------------------
+ 600px wide and below
+ ----------------------------------- */
+@media (max-width: 600px) {
+	.js-on #main #content > ul > li > ul > li > ul > li, .js-on #main #content > ul > li > ul > li > ul > li > ul > li,
+	.js-on #main #content > ul > li > ul > li > ul > li > ul > li > ul > li, .js-on #main #content > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li,
+	.js-on #main #content > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li {
+		padding-left: 4px !important;
+	}
+	.js-on	#search-mobile  { display: none; width: 100%;}
+
+	/*home page*/
+	#home div.js-on #content h2, #home div.js-on #news h2 {
+		font-size: 180%;
+		border-top-width: 6px;
+	}
+
+	.js-on #content .colFloat {width:42%;}
+	.js-on	.online-services .col1 .block .img, .js-on	.online-services .col2 .block .img {
+		display: block;
+		float: none;
+		height: 60px;
+		margin: 20px 0 5px 0;
+		padding: 0;
+		text-align: left;
+		width: auto;
+	}
+	.js-on table.words-we-use tr {border-top: 1px #000 solid;}
+	.js-on table.words-we-use td {border-top: none !important;}
+	.ie8 .js-on table.words-we-use td {border: none !important;}
+	.ie8 table.words-we-use th {display: none}
+	.ie8 table.words-we-use th[colSpan="2"] {display: block}
+	.js-on #logo-msd a {padding-right:15px!important;}
+	.js-on body.show-search #search-mobile {float:left;}
+	.tableWrap {overflow:auto;}
+	.js-on .mobile-nav .search-icon {display: block;}
+	.js-on .search-mobile-wrap {
+		float: right;
+	}
+	.js-on .header-nav .search {
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+}
+
+/* -----------------------------------
+ 570px wide
+ ----------------------------------- */
+@media (max-width: 570px) {
+	.js-on #header  #mobile-icons {display: none;}
+	.js-on .swap {display: block;text-align: center;}
+	.js-on .swap img {width: auto;}
+	.js-on .hide {display: none!important;}
+	.js-on #employers-providers {display:none;}
+
+	/* search expand */
+	body.show-search .js-on #header #search-mobile-wrap {padding: 15px 0 40px 0;}
+	body.show-search { background-position: 0 55px!important;}
+	body.show-search .js-on #banner-bg {top: 131px !important}
+
+	/*pages - Section landing*/
+	.js-on .two-col-content {width:100%!important;}
+	.js-on .two-col .block-wrap {width:100%!important;}
+	.js-on .two-col .block {margin-right:0!important;}
+	.js-on .two-col .block {border-top-width:2px!important;}
+	.js-on .two-col .block {
+		padding:5px 0 0 0!important;
+		min-height: auto !important;
+	}
+
+	.js-on .online-services a.finance {padding-right:0px!important;}
+	.js-on .online-services .button a {padding-top:10px!important;}
+	.js-on .online-services .button a div {margin-top:-2px!important;}
+	.js-on .online-services .long a {padding-top:16px!important;line-height:1em!important;}
+	.js-on .online-services .long a div {margin-top:-8px!important;}
+
+	#home .hero-feature {background-position: 15px -15px;}
+	#home #feature-buttons {width: 93%;}
+
+}
+/* -----------------------------------
+ 550px wide
+ ----------------------------------- */
+@media (max-width: 550px) {
+	.js-on .margin-all {clear: both;}
+	.js-on .container.banner .container { width: 95%; } /* override for header */
+	body.js-on {margin: 0;}
+	.js-on #header  #mobile-icons-wrap {
+		display: block;
+		width: 100%;
+		margin: 15px 0;
+	}
+	.ie7 .js-on #header  #mobile-icons-wrap {
+		display: block;
+		position: static;
+	}
+	.js-on #header #mobile-icons {
+		margin: 0 auto;
+		position: static;
+		width: 240px;
+	}
+	.js-on #tagline {height: 30px;}
+	.js-on nav > ul {box-shadow: none;}
+	.js-on #tooltip_continer {width: 150px;}
+	.js-on .banner.container {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.js-on .search-mobile-wrap {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		/*overflow: hidden; <-- this cause the issues with search autocomplete dropdown hidden behind */
+		clear: both;
+	}
+	.js-on #news .picture {height: auto;}
+
+	/*GSA*/
+	.js-on	#search-mobile #search a {position: static;}
+	.js-on	#search .ss-gac-m {
+		clear: both;
+		float: none;
+		width: 246px !important;
+	}
+	.js-on #breadcrumbs-wrap {font-size: 0.95em;}
+	.js-on #breadcrumbs {}
+	.js-on #breadcrumbs #items {display: none;}
+	.js-on #header {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		height: 125px !important;
+	}
+	.ie7 .js-on #header {height: 140px !important;}
+	.ie7 .js-on header  #search-mobile {
+		width: 100%;
+	}
+	.ie7 .js-on #search-mobile-wrap {
+		position: relative;
+		top: -2px;
+		left: 0;
+	}
+	.js-on #search-mobile #search {
+		float: right;
+		text-align: center;
+		padding: 0;
+	}
+	.js-on #search-mobile #search #suggestion_form {width: 292px !important;}
+	.js-on #header  #mobile-icons {
+		margin-top: 0px;
+		clear: both;
+		position: static;
+		margin: 0 auto;
+		float: none;
+	}
+	.js-on .back-white {display: none;}
+	.js-on #content-title-head {
+		display: block;
+		font-size: 85%;
+		vertical-align: middle;
+		line-height: 1.55em;
+		padding-bottom: 2px;
+		min-height: 45px;
+	}
+	.js-on #content-title-head-hr {
+		display: block;
+		border-bottom: 2px dotted #121F6B;
+		margin: 0 0 10px 0;
+	}
+	.js-on #content-links-foot {width: 80%;}
+	.js-on #content-title-foot {display: none;}
+	.js-on .img-caption {
+		padding: 0;
+		width: auto;
+		display: inline-block;
+		width: 100%;
+	}
+	.js-on div.rightFloat {float: none !important;}
+	.js-on #content .landing-right-col {
+		margin: 0;
+		width: auto;
+	}
+	.js-on #content .yes-no-buttons {
+		float: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		width: 100%;
+	}
+	.js-on iframe[src*="map"] {width: 100% !important;}
+	.js-on table.words-we-use td {
+		width: 98%;
+		display: block !important;
+		float: left;
+		clear: both;
+		border-top: none;
+	}
+	.js-on table.words-we-use tbody > tr th + th {display: none}
+	.js-on table.words-we-use td strong {width: 100%;}
+	.js-on table.words-we-use {overflow-x: visible}
+	.js-on #content .colFloat {width:94%;}
+	.js-on .login-message {
+		background-color: #FFF;
+		padding: 5%;
+		border: 1px solid #d7d6d6;
+		border-radius: 8px;
+		width: 80%;
+		margin: 0 5%;
+		position: absolute;
+		top: 70px;
+		z-index: 200;
+		text-align: left;
+	}
+	.js-on	.income-calculator-wrap {
+		width:100%!important;
+		float:left;
+	}
+	.js-on	.income-calculator {
+		margin:0 auto 20px auto!important;
+		float:none;
+	}
+
+	/* Home */
+	#home #feature-buttons {width: 92%;}
+
+	/* Forms */
+	.finding-staff, .lsv-form, .jobstreams-form, .income-declaration, .long-forms, .standdown-form {padding: 0 0 20px!important;}
+	#content form fieldset {padding:0 15px 35px!important;}
+	.js-on form .buttonrow .addbutton .button, .js-on form .buttonrow .addbutton .button:hover {
+		background-position: 15px 10px;
+		font-size: 100%;
+		padding: 8px 30px 8px 40px;
+		font-size: 100%;
+		width: auto;
+	}
+	form .checkbox .label{margin-left: 30px!important;width:auto!important;}
+	form .buttonrow {text-align: left;}
+	form .buttonrow .submitbutton { padding: 8px 40px!important;}
+}
+
+/* -----------------------------------
+500px wide
+ ----------------------------------- */
+@media (max-width: 500px) {
+	.ie8 .js-on .search-page .advanced {display:none!important;}
+	.ie8 .js-on .search-page #main_res {padding-left:0!important;}
+	.ie8 .js-on .search-page div#main_res_wrap { border-left: none!important;width: 95%!important;}
+	.ie8 .js-on .search-page #top-navigation {width: 95%!important;}
+	.ie8 .js-on .ie8 .js-on .search-page .table100 {width: 95%!important;}
+	.ie8 .js-on .search-page #dyn_nav_wrap {display:none;}
+	/*Circumstance form*/
+	#circumstance-form .circumstance-change .checkbox {width:100%!important;float:none!important;}
+
+	/* Home */
+	body#home .container {padding-top: 0 !important;}
+	body#home.js-on div.js-on .margin-all {padding-top:0;}
+	#home div.js-on #content {
+		margin:0;
+	}
+	#home .hero-feature {
+		width: auto;
+		height: auto;
+		min-height: auto;
+		margin: 0;
+		background-size: 100% auto;
+		overflow:hidden;
+		background-position: 15px 0px;
+	}
+	#home .hero-banner {
+		font-size: 129%;
+		line-height: 1.2em;
+		float: none;
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+	#home .hero-banner .summary {
+		padding: 10px 0 10px 20px;
+		margin: 20px 0;
+		min-height: 100px;
+	}
+	#home .hero-banner .popular-topics {
+		padding:20px;
+		margin: 0;
+		width: auto; /* 87.6% */
+		background-color: #F6F2F1;
+	}
+	#home .hero-banner .popular-topics .topics-buttons a{
+		padding: .4em 14px .4em 14px;
+	}
+	#home div.js-on #content h2 {
+		font-size: 120%;
+	}
+	#home #feature-buttons{width:91.5%;}
+	#home #news {
+		margin: 0;
+		width: auto;
+	}
+	#home #news h2{
+		font-size:180% !important;
+	}
+	#news #story {
+		height: 100%!important;
+		display: inline-block;
+	}
+	#home #news .story {
+		margin-bottom:0;
+		width: 100%;
+		max-width: 100%;
+	}
+	#home #news .story a {
+        border-left: none;
+	}
+	#home #news .story-text {
+		padding:10px;
+		float:none;
+		width:auto;
+	}
+	#home #news .picture-text img {
+		width:100%;
+		height: auto;
+	}
+
+
+}
+
+ /* -----------------------------------
+ 390px wide - mobile layout
+ ----------------------------------- */
+@media (max-width: 390px) {
+	.js-on .container {padding-top: 6px!important;}
+	.js-on .banner .container, .js-on .banner.container {padding-top: 0!important;} /* refactor one day */
+	.js-on #banner-bg {top: 56px!important;}
+   .pdf img, .rtf img, .word img, .powerpoint img, .excel img, .project img, .text img, .image img, .zip img, .mpeg img, .flashvideo img, .flash img, .odt img, .pages img, .gdoc img, .email img {
+		padding-bottom: 45px!important;
+	}
+	.js-on .site-header .nav-icon {
+		padding: 0;
+		background: url(../images/nav-icon.svg) #003960 50% 50% / 19px 19px no-repeat!important;
+    	background: url(../images/nav-icon.png) #003960 50% 50% no-repeat;
+	}
+	.js-on .nav-icon span {
+		display: block;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		height: 40px;
+		width: 40px;
+	}
+	#home #news {
+		width: 101%;
+	}
+}
+
+/* -----------------------------------
+ 410px wide - mobile layout
+ ----------------------------------- */
+@media (max-width: 414px) {
+	.js-on #banner-bg {
+		width: 559px;
+		top: 56px;
+		max-height: 140px;
+	}
+	.js-on #banner-blue  {
+		height: auto;
+		padding-top: 4px !important;
+		height: 120px !important;
+		margin-top:10px !important;
+	}
+	.js-on #breadcrumbs {padding-top: 5px;}
+	.ie8 .js-on .search-page .ss-gac-m {width:214px!important;}
+	.ie8 .js-on .search-page .results-nav font {display:none;}
+	.js-on #header .logo-winz {
+		background: url('../images/logo-winz.png') no-repeat;
+		background: none, url("../images/logo-winz.svg") no-repeat left bottom; /* logo-winz-mob.png */
+		background-size: 238px 34px;
+		width: 238px;
+		height: 34px;
+	}
+	.js-on #header #logo-msd a {
+		height: 55px;
+		width: 320px;
+		padding:0!important;
+		background: url('../images/logo-msd-mob.png') no-repeat;
+		background: none,  url("../images/logo-msd-mob.svg") no-repeat; /* logo-msd-mob.png */
+	}
+	.js-on #header hr {
+		margin-top: 12px;
+		margin-bottom: 5px!important;
+	}
+	.js-on .container {padding-top: 6px;}
+	.js-on .banner.container {padding-top: 0;}
+	.js-on #nav-wrap {top:-3px;/*-74px*/}
+	.js-on #breadcrumbs {margin-top: 5px;}
+
+	/* search expand */
+	.js-on #header .search-shadow {
+		margin: 20px 0!important;
+		float:left;
+	}
+	body.show-search .js-on #header #search-mobile-wrap {padding: 15px 0 40px 0;}
+	body.show-search { background-position: 0 55px!important;}
+	body.show-search .js-on #banner-bg {top: 100px !important}
+
+    /* Home */
+	#home #feature-buttons{width:90%;}
+}
+
+/* -----------------------------------
+ 375px wide
+ ----------------------------------- */
+@media (max-width: 375px) {
+	.js-on .online-services-buttons  {max-width: 375px !important;}
+	.ie8 .js-on .search-page .searchbox input[type=text],
+	.ie8 .js-on .search-page .bottom-search-box input[type=text] {width:11em!important;}
+	.ie8 .js-on .search-page .ss-gac-m {width:188px!important;}
+	.js-on #header  #home-icon {margin-left:0;}
+	.js-on form .buttonrow .addbutton .button, .js-on form .buttonrow .addbutton .button:hover {
+		padding-left: 18px;
+		padding-right: 18px;
+		background-image:none;
+	}
+	#home .hero-feature {width: 100%;}
+	#home .hero-banner .summary {
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: 70%;
+	}
+    #home #feature-buttons {width: 89%;}
+}
+
+/* -----------------------------------
+ 330px wide
+ ----------------------------------- */
+@media (max-width: 330px) {
+	.js-on .container {padding-top: 10px!important;}
+	#home .header-nav .container{ width: 100%; }
+	.js-on #header #logo-msd a {width: 288px;}
+	#header .logo-winz a {width:auto!important;}
+	.js-on .site-header .nav-icon {margin-left:0;}
+	.js-on .income-calculator {
+		width:100%;
+		float:none;
+		border-radius: 0;
+		padding:0;
+	}
+	.js-on .income-calculator form {
+		border-radius: 0;
+		margin: 0 0;
+	}
+	.js-on .income-calculator label{margin: 4px 0;}
+	.js-on .income-calculator .buttonrow {border-radius: 0;}
+	.js-on .income-calculator .results *, .js-on	.income-calculator .buttonrow *{width:auto!important;}
+	.js-on .income-calculator #hourly .input, .js-on .income-calculator #weekly .input {width:78px; }
+	.js-on .income-calculator #hourly input, .js-on .income-calculator #weekly input {width:58px; }
+	.js-on .income-calculator #hourly input#numberOfHours {width: 73px !important;}
+	.js-on .income-calculator select{width:220px!important;}
+	.js-on .income-calculator .buttonrow {width: 100%;}
+
+	.js-on .online-services a.finance {padding-right:0px!important;}
+	.js-on .online-services .button a {padding-top:10px!important;}
+	.js-on .online-services .button a div {margin-top:-2px!important;}
+	.js-on .online-services .long a {padding-top:8px!important;line-height:1em!important;}
+	.js-on .online-services .long a div {margin-top:0px!important;}
+	.js-on .online-services .long a.apply,.js-on .online-services .long a.supplier {padding-top:18px!important;}
+	.js-on .online-services .long a.apply div,.js-on .online-services .long a.supplier div {margin-top:-10px!important;}
+
+	#home .hero-banner{margin:0;}
+	#home .hero-feature {
+		background-size: 180%;
+		background-position: top right;
+	}
+    #home #feature-buttons {width: 93%;}
+	#home .hero-banner .summary {
+		padding:20px 10px 0 10px;
+		margin: 165px 0 0;
+		width: 95%;
+		font-size: 80%;
+		background-color: #F6F2F1;
+	}
+	#home .hero-banner .popular-topics {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	#home #alertbox,
+	#home #warning1,
+	#home #warning2,
+	#home #feature-buttons {
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+}
+
+/* -----------------------------------
+ 280px wide
+ ----------------------------------- */
+@media (max-width: 280px) {
+	.ie8 .js-on .search-page .searchbox input[type=text], .ie8 .js-on .search-page .bottom-search-box input[type=text] {width:6em!important;}
+}
+
+/* -----------------------------------
+ 270px wide
+ ----------------------------------- */
+@media (max-width: 270px) {
+	.js-on .mobile-nav a#home-icon-mob {display:none;}
+	.js-on .search-icon {margin-left: 0!important;}
+	.js-on .container {padding-top: 3px!important;}
+	.js-on #banner-blue {height: 116px !important;margin-top: 20px !important;}
+	.js-on #banner-bg {top: 60px!important;}
+	.js-on #header .logo-winz {
+		background: url('../images/logo-winz.png') no-repeat;
+		background: none, url("../images/logo-winz.svg") bottom left no-repeat; /* logo-winz-mob2.png */
+		width: 210px;
+		height: 30px;
+	}
+	.js-on #header #logo-msd a {
+		height: 51px;
+		width: 210px;
+		padding:0!important;
+		background: url('../images/logo-msd.png') no-repeat;
+		background: none,  url("../images/logo-msd.svg"); /* logo-msd-mob2.png */
+	}
+	#header #navigation-float {
+		float:left!important;
+		width:auto!important;
+		min-width: 213px !important;
+	}
+	header .mobile-nav {float: left !important;}
+	.js-on .online-services a.finance {padding-right:0px!important;}
+	.js-on .online-services .button a {padding-top:12px!important;}
+	.js-on .online-services .button a div {margin-top:-5px!important;}
+	.js-on .online-services .long a {max-width:190px;padding-top:6px!important;line-height:1.2em!important;}
+	.js-on .online-services .long div {margin-top:2px!important;}
+	.js-on #footer {
+		padding-left: 5px !important;
+		padding-right: 5px !important;
+	}
+	.ie7 .js-on #footer {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+}
+
+/* -----------------------------------
+ Unified footer
+ ----------------------------------- */
+@media (max-width: 40em) {
+	.js-on #footer	.footer-logo-msd {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.js-on #footer {text-align: center;}
+	.js-on #footer .footer-content {text-align: center;}
+	.js-on #footer .footer-logos {height: 131px;}
+	.ie7 .js-on	#footer .footer-logos, .ie8 .js-on	#footer .footer-logos {height: 95px;}
+	.js-on #footer	.footer-link-nzg {
+		padding-top: 20px;
+		position: static;
+		display: block;
+		width: 210px;
+		margin-left: auto;
+		margin-right: auto;
+		float: none !important;
+		color: #fff !important;
+		cursor: pointer !important;
+		text-decoration-color: -moz-use-text-color;
+		text-decoration-line: none;
+		text-decoration-style: solid;
+		background-image:none;
+	}
+	.js-on	#footer	.footer-link-nzg span {
+		text-align: center;
+		width: 100%;
+		display: block;
+		font-size: 80%;
+	}
+	.js-on	#footer img[src$="../images/icon-external-link.svg"] {display: inline-block;}
+	.ie7 .js-on	#footer img[src$="../images/icon-external-link.svg"] {display: none;}
+	.ie8	.js-on	#footer img[src$="../images/icon-external-link.svg"] {display: none;}
+	.js-on	#footer	.footer-link-nzg  .footer-logo-nzg {display: none !important;}
+	.js-on	#footer .footer-link-msd {float: none !important;}
+	.js-on	#footer ul {float: none;
+		margin-left: 1.8em;
+		margin-right: 1.8em;
+	}
+	.js-on .footer-link-nzg span, .js-on  .footer-link-nzg span * {display:inline-block!important;}
+}
+
+@media (min-width: 40.0625em) {
+	.js-on	#footer	.footer-content, .js-on	#footer .footer-logos-container {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+	.js-on	#footer ul li a {display: inline-block;}
+	.js-on	#footer .delimeter {
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+}
+
+@media (max-width: 60.0625em) {
+	.js-on	#footer	.footer-link-nzg span {clear: both;}
+}
+
+/* -----------------------------------
+Font scaling
+ ----------------------------------- */
+@media screen and (max-width: 1100px) {
+	html { font-size: 95%; }
+	.primary-nav { font-size: 1.3em ! important; }
+	.primary-nav > a { margin-right: 35px;line-height: 1.6em ! important; }
+	.primary-nav a.home-icon { background-position: 0 17px !important; }
+}
+
+@media screen and (max-width: 1000px) {
+	html { font-size: 94%; }
+    .primary-nav a,
+	.primary-nav span {line-height: 1.8em ! important; }
+}
+
+@media screen and (max-width: 990px) {
+	html { font-size: 93% ! important; }
+}
+
+@media screen and (max-width: 950px) {
+	html { font-size: 87% ! important; }
+    .js-on #login, .nav-icon {
+		float: left;
+		font-size: 112%;
+		margin-bottom: 5px;
+		margin-left: 3px;
+		margin-right: 0;
+		margin-top: 5px;
+		padding-bottom: 8px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 8px;
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 700px) {
+  html { font-size: 92%; }
+}
+
+@media screen and (max-width: 600px) {
+  html { font-size: 91%; }
+}
+
+@media screen and (max-width: 500px) {
+  html { font-size: 90%; }
+}
+
+@media screen and (max-width: 400px) {
+  html { font-size: 89%; }
+  /*.account { font-size:85% }*/
+}
+
+@media screen and (max-width: 300px) {
+  html { font-size: 88%; }
+  /*.account { font-size:80% }*/
+}
+
+@media screen and (max-width: 280px) {
+  /*.account { font-size:70% }*/
+}

@@ -1,0 +1,313 @@
+/* www.workandincome.gov.tnz/webadmin/css/form.css */
+
+/*  List a job vacancy - .finding-staff
+ LSV Enquiry Form - .lsv-form
+ Job Streams Enquiry Form - .jobstreams-form
+ School and Year Start-up Payment form - .long-forms #kin-carers-form
+ End of School year form .long-forms #eosy-form
+ Standdown form .standdown-form */
+
+/* Forms */
+.finding-staff, .lsv-form, .jobstreams-form, .income-declaration, .long-forms, .standdown-form {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 100%;
+}
+#content form {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 100%;
+	border: none;
+}
+#content form fieldset {
+	margin: 0 0 15px 0;
+	padding: 0 15px 35px 27px;
+	float: none;
+	width: auto;
+	border: none;
+	background-color: #f2f2f2;
+	width: auto;
+	clear: both;
+}
+#content form fieldset h3 {
+	margin:0;
+	color:#121f6b;
+}
+#content form fieldset#change-fields div{
+	border-bottom:1px solid #aaa;
+	padding:20px 0;
+}
+
+#content form fieldset#change-fields div:last-child {
+	border-bottom:none;
+	padding:20px 0 0;
+}
+#content form fieldset [id^="child"], #content form fieldset fieldset{padding: 0 0 35px 0!important;border-top:1px solid #aaa;}
+#content form fieldset fieldset.child-details {border:none;}
+#content form fieldset [id^="child"] legend span, #content form fieldset .additional {border-top: 1px solid #aaaaaa;}
+.ie7 #content form fieldset {width: 100%;}
+#content form fieldset legend, #content form fieldset legend span {
+	margin: 0;
+	padding: 10px 0 5px 0;
+	float: left;
+	width: 100%;
+	border: none;
+	color: #121f6b;
+	font-size: 130%;
+	font-family: Georgia, Helvetica;
+}
+form fieldset fieldset legend, form fieldset fieldset legend span {font-size: 110%;}
+em {
+	padding: 0 5px 0 0;
+	margin: 0;
+	color: #cc2e32;
+	font-size: 100%;
+	line-height: 0.1em;
+	position: relative;
+}
+.formerrors {
+	margin: 0 0 20px 0;
+	padding: 2px 15px 10px 15px;
+	border: none;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background-color: #fabf9d;
+}
+.finding-staff .input em {line-height: 1.2em;}
+#content form div {
+	margin: 0;
+	padding: 0;
+	float: left;
+	border: none;
+	width: 100%;
+}
+#content form .hidden{display: none;}
+
+#content form .error {
+	background-color: #fabf9d;
+	border: none;
+	border-bottom: solid 2px #FFF;
+}
+#content form div label {
+	margin: -1px 0 0 0;
+	padding: 10px 0 5px 0;
+	float: left;
+	border: none;
+	width: 100%;
+}
+#content form div label {width: 100%;}
+#content form div .label {
+	padding: 0 10px 5px 0;
+	float: left;
+	border: none;
+	text-align: left;
+	font-weight: 500;
+}
+form div .input {
+	margin: 0;
+	padding: 0 0 5px 0;
+	border: none;
+	width: 100%;
+	clear: both;
+}
+form div .input input, form div .input textarea, form select {
+	float: none;
+	clear: both;
+	border: 1px solid #bababa;
+	padding: 10px 2%;
+	width: 94%;
+}
+form select {width: 98%;}
+form div .input input[type="radio"] {
+	width: auto;
+	border:none!important;
+}
+form textarea, form div .input input[type="text"] {background-color: #ffffff;}
+form div .input input[type="checkbox"], form div .input input[type="checkbox"]:focus  {
+	border: none!important;
+	display:inline!important;
+	width:auto!important;
+	margin-right: 15px;
+}
+form textarea:focus, form div .input input:focus, form div .input input:focus {
+	border: 2px solid #0169ad !important;
+	margin:-1px;
+}
+form div .help, form fieldset div .helpText {
+	border: none;
+	float: none;
+	margin: 0;
+	padding: 7px 0 0 0;
+	position: relative;
+	top: -3px;
+	font-size: 85%;
+	clear: both;
+	display: block;
+}
+form .checkbox, form .checkbox-apply {
+	margin: 0;
+	padding: 0;
+	float: left;
+	border: none;
+}
+
+/*kin carrer align*/
+form#kin-carers-form  .checkbox .label {}
+
+/*End of school year align*/
+
+
+/*List a job vacancy align*/
+.finding-staff .services label{
+	padding-left: 22px !important;
+	width:95%!important;
+}
+.finding-staff .services input[type="checkbox"] {margin-left: -20px !important;}
+.finding-staff .question label {}
+.finding-staff form fieldset div .content {
+	margin: 0;
+	padding: 0 0 5px;
+	width: 100%;
+	border: none;
+	font-size: 80%;
+}
+.long-forms form .radio {padding: 10px 0 10px 0;}
+.long-forms form .radio label:hover, .long-forms form .radio label:focus {
+	background: none;
+	border: 0;
+}
+.long-forms form fieldset .radio .input {width: auto;}
+form .checkbox, form .checkbox-apply {position: relative;}
+form .checkbox label, form .checkbox-apply label {
+	margin: 0;
+	padding: 15px 0 10px 0;
+	float: left;
+	border: none;
+}
+form#kin-carers-form .checkbox-apply label .label {
+	width: auto;
+	padding-left: 0;
+}
+form .checkbox .label {
+	margin-left: 40px;
+	padding: 0px 0 5px 10px;
+	text-align: left;
+	width: 90%;
+}
+form .checkbox .input, form .checkbox-apply .input {
+	margin: 0;
+	padding: 0 10px 5px 5px;
+	float: left;
+	width: 15px;
+	border: none;
+}
+form .checkbox .input {
+	padding: 0 0 5px 5px;
+	position: absolute;
+	left: 0;
+}
+form .checkbox .input input {
+	width: auto;
+	border:none!important;
+}
+form .privacy, .long-forms .checkbox-apply label {padding-top:20px!important;}
+form .buttonrow {
+	margin: 0;
+	float: left;
+	border: none;
+	clear: both !important;
+	text-align: center;
+	width: auto;
+}
+form .buttonrow .addbutton .button {
+	margin: 0;
+	padding: 0 0 0 18px;
+	border: none;
+	background: url(../images/plus.png) #017AC9 no-repeat 37px 15px;
+	cursor: pointer;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 140%;
+	border-radius: 28px;
+	border: medium none;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 140%;
+	font-weight: normal;
+	margin: 10px 0px 0px;
+	padding: 8px 80px;
+	text-decoration: none;
+}
+form .buttonrow .addbutton .button:hover, form .buttonrow .addbutton .button:focus {
+	background-image: none;
+	text-decoration: none;
+	background: url(../images/plus.png) #282D41 no-repeat 37px 15px;
+}
+form .buttonrow .addbutton input {padding: 0;}
+form .buttonrow .removebutton {
+	margin: 0;
+	padding: 0 0 2px 25px;
+	border: none;
+	background: transparent url(../images/minus-blue.png) no-repeat 0px 2px;
+	cursor: pointer;
+	font-weight: bold;
+	text-decoration: none;
+}
+form .buttonrow .removebutton:hover, form .buttonrow .removebutton:focus {
+	padding: 0 0 1px 25px;
+	border: none;
+	color:#0079c9;
+	text-decoration: underline;
+}
+form .buttonrow .submitbutton {
+	background: #017AC9;
+	border-radius: 28px;
+	border: medium none;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 140%;
+	font-weight: normal;
+	margin: 10px 0px 0px;
+	padding: 8px 80px;
+	text-decoration: none;
+}
+form .buttonrow .submitbutton:hover, form .buttonrow .submitbutton:focus {
+	background-color: #282D41;
+	background-image: none;
+}
+fieldset .accessable-hide {padding-top:15px!important;}
+.long-forms form .instructions {
+	font-size: 105%;
+	padding: 0 0 5px 0;
+}
+.long-forms form .childdetails  .instructions {
+	font-size: 120%;
+	padding: 10px 0 5px 0;
+	color: #003366;
+}
+.long-forms form #child-1 {margin-top: 10px;}
+
+/*LSV Forms*/
+.lsvlogo {
+	float: right;
+	position: relative;
+	padding: 25px 0 0 5px;
+	margin: 0 0 0 0;
+}
+/*Circumstance form*/
+#circumstance-form .circumstance-change .checkbox {
+	width:50%;
+	float:left;
+}
+
+#mailing-changed, #fee-structure {
+	clear:both;
+}
+
+/* Children change form */
+#content form#children-change-form fieldset [id^="child"]{
+	border:none!important;
+}
