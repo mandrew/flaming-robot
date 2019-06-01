@@ -11,17 +11,17 @@
 @import "bootstrap/scss/_print.scss";
 
 // Core CSS
-/*@import "bootstrap/reboot";
-@import "bootstrap/type";
-@import "bootstrap/images";
-@import "bootstrap/code";
-@import "bootstrap/grid";
-@import "bootstrap/tables";
-@import "bootstrap/forms";
-@import "bootstrap/buttons";
+/*@import "bootstrap/scss/_reboot.scss";
+@import "bootstrap/scss/_type.scss";
+@import "bootstrap/scss/_images.scss";
+@import "bootstrap/scss/_code.scss";
+@import "bootstrap/scss/_grid.scss";
+@import "bootstrap/scss/_tables.scss";*/
+//@import "bootstrap/scss/_forms.scss";
+/* @import "bootstrap/scss/_buttons.scss";*/
 
 // Components
-@import "animation";
+/*@import "animation";
 @import "dropdown";
 @import "button-group";
 @import "input-group";
@@ -45,6 +45,6 @@
 @import "tooltip";
 @import "popover";
 @import "carousel";
-
+*/
 // Utility classes
-@import "bootstrap/utilities"; */
+//@import "bootstrap/scss/_utilities.scss";
